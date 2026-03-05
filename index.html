@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Rodríguez - Portfolio</title>
+    <meta name="description"
+        content="Portfolio de Mario Rodríguez - Administrador de Sistemas Junior | Técnico Informático">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-logo">Mario Rodríguez</span>
+            <div class="nav-controls">
+                <div class="lang-selector">
+                    <button class="lang-btn active" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="cat">CAT</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <span class="hero-tag" data-i18n="hero-tag">Disponible para Prácticas</span>
+                <h1 class="hero-title" data-i18n="hero-title">¡Hola! Soy <span>Mario Rodríguez</span></h1>
+                <h2 class="hero-subtitle" data-i18n="hero-subtitle">Administrador de Sistemas Junior | Técnico
+                    Informático</h2>
+                <p class="hero-bio" data-i18n="hero-bio">Estudiante de ASIR, responsable y con facilidad para aprender y
+                    adaptarme a nuevos entornos.</p>
+                <div class="social-links">
+                    <a href="mailto:mario2006rodriguez@gmail.com" class="social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        mario2006rodriguez@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/mariorodriguezgonzalez" target="_blank" class="social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="hero-img-container">
+                <img src="img/foto.png" alt="Mario Rodríguez" class="hero-img">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="section-header">
+                <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <h2 class="section-title" data-i18n="about-title">Sobre mí</h2>
+            </div>
+            <div class="card">
+                <p class="description" data-i18n="about-desc">
+                    Estudiante de ASIR, responsable y con facilidad para aprender y adaptarme a nuevos entornos. Cuento
+                    con experiencia en soporte técnico, resolución de incidencias de hardware y software, así como en la
+                    instalación y mantenimiento de sistemas informáticos. Me considero una persona proactiva y motivada
+                    por el sector tecnológico.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="section-header">
+                <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <h2 class="section-title" data-i18n="exp-title">Experiencia</h2>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card timeline-card animate-fade-in-up">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3 class="card-title" data-i18n="exp2-title">Profesor de Refuerzo</h3>
+                                <p class="subtitle">Salesianos Sarrià</p>
+                            </div>
+                            <span class="timeline-date">11/2025 – 01/2026</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li data-i18n="exp2-l1">Refuerzo de contenidos teóricos y prácticos de informática.</li>
+                            <li data-i18n="exp2-l2">Resolución de dudas y acompañamiento en el aprendizaje.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card timeline-card animate-fade-in-up" style="animation-delay: 0.1s;">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3 class="card-title" data-i18n="exp1-title">Becario Soporte Técnico</h3>
+                                <p class="subtitle">Universidad Internacional de Cataluña</p>
+                            </div>
+                            <span class="timeline-date">06/2024 – 02/2025</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li data-i18n="exp1-l1">Atención y resolución de incidencias de hardware y software.</li>
+                            <li data-i18n="exp1-l2">Soporte técnico presencial y remoto.</li>
+                            <li data-i18n="exp1-l3">Instalación y configuración de software y equipos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <div class="section-header">
+                <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                </svg>
+                <h2 class="section-title" data-i18n="edu-title">Formación</h2>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card timeline-card animate-fade-in-up">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3 class="card-title" data-i18n="edu-gs">Grado Superior en Sistemas Informáticos en Red
+                                </h3>
+                                <p class="subtitle">Salesianos Sarrià</p>
+                            </div>
+                            <span class="timeline-date" data-i18n="edu-present">2025 - Presente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card timeline-card animate-fade-in-up" style="animation-delay: 0.1s;">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3 class="card-title" data-i18n="edu-gm">Grado Medio en Sistemas Microinformáticos y
+                                    Redes</h3>
+                                <p class="subtitle">Salesianos Sarrià</p>
+                            </div>
+                            <span class="timeline-date">2023 - 2025</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li data-i18n="edu-note">Nota Media: 9,51</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="section-header">
+                <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                </svg>
+                <h2 class="section-title" data-i18n="skills-title">Habilitats & Coneixements</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Sistemas y Redes -->
+                <div class="card skill-card">
+                    <h3 class="skill-cat-title" data-i18n="skills-cat1">Sistemas & Redes</h3>
+                    <ul class="skill-list">
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="2" y1="10" x2="22" y2="10"></line>
+                            </svg>
+                            <span data-i18n="sk-win">Windows Server (AD, GPO, PS)</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 17s1-1 1-2V5a2 2 0 0 1 2-2h14v10l-4 4H4Z"></path>
+                            </svg>
+                            <span data-i18n="sk-linux">GNU/Linux</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 3h20"></path>
+                                <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"></path>
+                                <path d="m7 21 5-5 5 5"></path>
+                            </svg>
+                            <span data-i18n="sk-virt">Virtualització (Tipus 1 i 2)</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <path d="M7 7h10"></path>
+                                <path d="M7 12h10"></path>
+                                <path d="M7 17h10"></path>
+                            </svg>
+                            <span data-i18n="sk-docker">Docker & Contenidors</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5"></path>
+                                <path d="M12 5v14"></path>
+                                <path d="M5 12h14"></path>
+                            </svg>
+                            <span data-i18n="sk-vlan">VLAN & Switching</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            <span data-i18n="sk-serv">Serveis de Xarxa (DNS, DHCP)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Cloud y Gestión -->
+                <div class="card skill-card">
+                    <h3 class="skill-cat-title" data-i18n="skills-cat2">Cloud & Empresa</h3>
+                    <ul class="skill-list">
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M17.5 19a3.5 3.5 0 0 0 0-7c-.3 0-.63.02-.95.05A7 7 0 1 0 5 13L5 13a4 4 0 0 0 0 8h12.5Z">
+                                </path>
+                            </svg>
+                            <span data-i18n="sk-aws">Cloud: AWS (EC2, IaC)</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                            <span data-i18n="sk-adm">Administració de Sistemes</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            <span data-i18n="sk-doc">Documentació Tècnica</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
+                                <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path>
+                                <path d="M18 12H10"></path>
+                            </svg>
+                            <span data-i18n="sk-jira">Jira / Kanbanize</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 10h12"></path>
+                                <path d="M4 14h9"></path>
+                                <path d="M19 6a7.7 7.7 0 0 0-5.2-2A7.9 7.9 0 0 0 7 14a8 8 0 0 0 8 8 8 8 0 0 0 5-2">
+                                </path>
+                            </svg>
+                            <span data-i18n="sk-m365">Microsoft 365</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22c6-12 6-15 6-18a6 6 0 1 0-12 0c0 3 0 6 6 18Z"></path>
+                                <circle cx="12" cy="7" r="1.5"></circle>
+                            </svg>
+                            <span data-i18n="sk-google">Google Workspace</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Aptitudes -->
+                <div class="card skill-card">
+                    <h3 class="skill-cat-title" data-i18n="skills-cat3">Aptituds</h3>
+                    <ul class="skill-list">
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"></path>
+                                <path d="M4 12c-1.1 0-2-.9-2-2V7h20v3c0 1.1-.9 2-2 2"></path>
+                                <path d="M10 16v-4"></path>
+                                <path d="M14 16v-4"></path>
+                                <path d="M18 16v-4"></path>
+                                <path d="M6 16v-4"></path>
+                                <path d="M11 16h2"></path>
+                            </svg>
+                            <span data-i18n="sk-res">Resolució d'Incidències</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span data-i18n="sk-team">Treball en Equip</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path>
+                                <path d="M21 3v5h-5"></path>
+                            </svg>
+                            <span data-i18n="sk-adapt">Adaptabilitat</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5 5 0 0 0 8 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5">
+                                </path>
+                                <path d="M9 18h6"></path>
+                                <path d="M10 22h4"></path>
+                            </svg>
+                            <span data-i18n="sk-init">Creativitat i Iniciativa</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span data-i18n="sk-time">Gestió del Temps</span>
+                        </li>
+                        <li class="skill-list-item">
+                            <svg class="skill-item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            <span data-i18n="sk-comm">Comunicació</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates">
+            <div class="section-header">
+                <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15 8 22 9 17 14 18 21 12 17 6 21 7 14 2 9 9 8 12 2"></polygon>
+                </svg>
+                <h2 class="section-title" data-i18n="cert-title">Certificados</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="card skill-card animate-fade-in-up">
+                    <h3 class="skill-cat-title" data-i18n="cert1-title"
+                        style="margin-bottom: 0.5rem; text-transform: none; font-size: 1.1rem;">Introducción a la
+                        Ciberseguridad</h3>
+                    <p class="text-secondary" style="font-size: 0.95rem; font-weight: 500;" data-i18n="cert1-desc">Cisco
+                        Networking Academy</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="section-header">
+                <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <h2 class="section-title" data-i18n="proj-title">Proyectos</h2>
+            </div>
+            <div class="projects-grid">
+                <a href="proyectos/FileBrowser-SalesiansSarria.html" id="project-filebrowser-link"
+                    class="card project-card animate-fade-in-up">
+                    <h3 class="card-title" data-i18n="proj3-title">Distribución ISO Filebrowser</h3>
+                    <p class="text-secondary" style="margin-top: 0.75rem; font-size: 0.95rem;" data-i18n="proj3-desc">
+                        Servidor de distribución local de ISOs usando Docker.</p>
+                    <span class="project-link" data-i18n="proj-link">Ver proyecto &rarr;</span>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Theme Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const theme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Translation Logic
+        const translations = {
+            es: {
+                "hero-tag": "Disponible para Prácticas",
+                "hero-title": "¡Hola! Soy <span>Mario Rodríguez</span>",
+                "hero-subtitle": "Administrador de Sistemas Junior | Técnico Informático",
+                "hero-bio": "Estudiante de ASIR, responsable y con facilidad para aprender y adaptarme a nuevos entornos.",
+                "about-title": "Sobre mí",
+                "about-desc": "Estudiante de ASIR, responsable y con facilidad para aprender y adaptarme a nuevos entornos. Cuento con experiencia en soporte técnico, resolución de incidencias de hardware y software, así como en la instalación y mantenimiento de sistemas informáticos. Me considero una persona proactiva y motivada por el sector tecnológico.",
+                "exp-title": "Experiencia",
+                "exp1-title": "Becario Soporte Técnico",
+                "exp1-l1": "Atención y resolución de incidencias de hardware y software.",
+                "exp1-l2": "Soporte técnico presencial y remoto.",
+                "exp1-l3": "Instalación y configuración de software y equipos.",
+                "exp2-title": "Profesor de Refuerzo",
+                "exp2-l1": "Refuerzo de contenidos teóricos y prácticos de informática.",
+                "exp2-l2": "Resolución de dudas y acompañamiento en el aprendizaje.",
+                "edu-title": "Formación",
+                "edu-gs": "Grado Superior en Sistemas Informáticos en Red",
+                "edu-gm": "Grado Medio en Sistemas Microinformáticos y Redes",
+                "edu-present": "2025 - Presente",
+                "edu-note": "Nota Media: 9,51",
+                "cert-title": "Certificados",
+                "cert1-title": "Introducción a la Ciberseguridad",
+                "cert1-desc": "Cisco Networking Academy",
+                "cert2-title": "Microsoft Power Automate",
+                "cert2-desc": "Microsoft Learn",
+                "proj-title": "Proyectos",
+                "proj1-title": "Calculadora de Subredes",
+                "proj1-desc": "Herramienta web completa para cálculo de subredes e IPs.",
+                "proj2-title": "Script Gestión AD",
+                "proj2-desc": "Script en PowerShell para automatización y creación de cuentas en Active Directory.",
+                "proj3-title": "Distribución ISO Filebrowser",
+                "proj3-desc": "Servidor de distribución local de ISOs usando Docker y RAID 5 para optimizar red educativa.",
+                "proj-link": "Ver proyecto &rarr;",
+                "skills-title": "Habilidades & Conocimientos",
+                "skills-cat1": "Sistemas & Redes",
+                "skills-cat2": "Cloud & Empresa",
+                "skills-cat3": "Aptitudes",
+                "sk-win": "Windows Server (AD, GPO, PS)",
+                "sk-ps": "PowerShell Automation",
+                "sk-linux": "GNU/Linux",
+                "sk-virt": "Virtualización (Tipo 1 y 2)",
+                "sk-aws": "Cloud: AWS (EC2, IaC)",
+                "sk-iac": "Infraestructura como Código",
+                "sk-docker": "Docker & Contenedores",
+                "sk-vlan": "VLAN & Switching",
+                "sk-sw": "Switching y Routing",
+                "sk-serv": "Servicios de Red (DNS, DHCP)",
+                "sk-jira": "Jira / Kanbanize",
+                "sk-kanban": "Metodología Kanban",
+                "sk-m365": "Microsoft 365",
+                "sk-google": "Google Workspace",
+                "sk-res": "Resolución de Incidencias",
+                "sk-adm": "Administración de Sistemas",
+                "sk-doc": "Documentación Técnica",
+                "sk-team": "Trabajo en Equipo",
+                "sk-adapt": "Adaptabilidad",
+                "sk-init": "Creatividad e Iniciativa",
+                "sk-time": "Gestión del Tiempo",
+                "sk-comm": "Comunicación"
+            },
+            cat: {
+                "hero-tag": "Disponible per a Pràctiques",
+                "hero-title": "Hola! Soc <span>Mario Rodríguez</span>",
+                "hero-subtitle": "Administrador de Sistemes Junior | Tècnic Informàtic",
+                "hero-bio": "Estudiant de ASIR, responsable i amb facilitat per aprendre i adaptar-me a nous entorns.",
+                "about-title": "Sobre mi",
+                "about-desc": "Estudiant de ASIR, responsable i amb facilitat per aprendre i adaptar-me a nous entorns. Compto amb experiència en suport tècnic, resolució d'incidències de maquinari i programari, així com en la instal·lació i manteniment de sistemes informàtics. Em considero una persona proactiva i motivada pel sector tecnològic.",
+                "exp-title": "Experiència",
+                "exp1-title": "Becari Suport Tècnic",
+                "exp1-l1": "Atenció i resolució d'incidències de maquinari i programari.",
+                "exp1-l2": "Suport tècnic presencial i remot.",
+                "exp1-l3": "Instal·lació i configuració de programari i equips.",
+                "exp2-title": "Professor de Reforç",
+                "exp2-l1": "Reforç de continguts teòrics i pràctics d'informàtica.",
+                "exp2-l2": "Resolució de dubtes i acompanyament en l'aprenentatge.",
+                "edu-title": "Formació",
+                "edu-gs": "Grau Superior en Sistemes Informàtics en Xarxa",
+                "edu-gm": "Grau Mitjà en Sistemes Microinformàtics i Xarxes",
+                "edu-present": "2025 - Actualitat",
+                "edu-note": "Nota Mitjana: 9,51",
+                "cert-title": "Certificats",
+                "cert1-title": "Introducció a la Ciberseguretat",
+                "cert1-desc": "Cisco Networking Academy",
+                "cert2-title": "Microsoft Power Automate",
+                "cert2-desc": "Microsoft Learn",
+                "proj-title": "Projectes",
+                "proj1-title": "Calculadora de Subxarxes",
+                "proj1-desc": "Eina web completa per al càlcul de subxarxes i IPs.",
+                "proj2-title": "Script Gestió AD",
+                "proj2-desc": "Script en PowerShell per a automatització i creació de comptes en Active Directory.",
+                "proj3-title": "Distribució ISO Filebrowser",
+                "proj3-desc": "Servidor de distribució local d'ISOs usant Docker i RAID 5 per optimitzar la xarxa.",
+                "proj-link": "Veure projecte &rarr;",
+                "skills-title": "Habilitats & Coneixements",
+                "skills-cat1": "Sistemes & Xarxes",
+                "skills-cat2": "Cloud & Empresa",
+                "skills-cat3": "Aptituds",
+                "sk-win": "Windows Server (AD, GPO, PS)",
+                "sk-ps": "PowerShell Automation",
+                "sk-linux": "GNU/Linux",
+                "sk-virt": "Virtualització (Tipus 1 i 2)",
+                "sk-aws": "Cloud: AWS (EC2, IaC)",
+                "sk-iac": "Infraestructura com a Codi",
+                "sk-docker": "Docker & Contenidors",
+                "sk-vlan": "VLAN & Switching",
+                "sk-sw": "Switching i Routing",
+                "sk-serv": "Serveis de Xarxa (DNS, DHCP)",
+                "sk-jira": "Jira / Kanbanize",
+                "sk-kanban": "Metodologia Kanban",
+                "sk-m365": "Microsoft 365",
+                "sk-google": "Google Workspace",
+                "sk-res": "Resolució d'Incidències",
+                "sk-adm": "Administració de Sistemes",
+                "sk-doc": "Documentació Tècnica",
+                "sk-team": "Treball en Equip",
+                "sk-adapt": "Adaptabilitat",
+                "sk-init": "Creativitat i Iniciativa",
+                "sk-time": "Gestió del Temps",
+                "sk-comm": "Comunicació"
+            },
+            en: {
+                "hero-tag": "Available for Internships",
+                "hero-title": "Hi! I am <span>Mario Rodríguez</span>",
+                "hero-subtitle": "Junior Systems Administrator | IT Technician",
+                "hero-bio": "ASIR student, responsible and with an ability to learn and adapt to new environments.",
+                "about-title": "About Me",
+                "about-desc": "ASIR student, responsible and with an ability to learn and adapt to new environments. I have experience in technical support, hardware and software incident resolution, and installation and maintenance of computer systems. I consider myself a proactive person motivated by the technology sector.",
+                "exp-title": "Experience",
+                "exp1-title": "IT Support Intern",
+                "exp1-l1": "Attention and resolution of hardware and software incidents.",
+                "exp1-l2": "On-site and remote technical support.",
+                "exp1-l3": "Installation and configuration of software and equipment.",
+                "exp2-title": "Tutoring Teacher",
+                "exp2-l1": "Reinforcement of theoretical and practical IT content.",
+                "exp2-l2": "Resolution of doubts and accompaniment in learning.",
+                "edu-title": "Education",
+                "edu-gs": "Advanced Degree in Network Systems Administration",
+                "edu-gm": "Intermediate Degree in Microcomputer Systems and Networks",
+                "edu-present": "2025 - Present",
+                "edu-note": "Average Grade: 9.51",
+                "cert-title": "Certificates",
+                "cert1-title": "Introduction to Cybersecurity",
+                "cert1-desc": "Cisco Networking Academy",
+                "cert2-title": "Microsoft Power Automate",
+                "cert2-desc": "Microsoft Learn",
+                "proj-title": "Projects",
+                "proj1-title": "Subnet Calculator",
+                "proj1-desc": "Complete web tool for subnetting and calculating IP ranges.",
+                "proj2-title": "AD Management Script",
+                "proj2-desc": "PowerShell script for automation and creation of accounts in Active Directory.",
+                "proj3-title": "Filebrowser ISO Distribution",
+                "proj3-desc": "Local ISO distribution server using Docker and RAID 5 to eliminate WAN bottlenecks.",
+                "proj-link": "View project &rarr;",
+                "skills-title": "Skills & Knowledge",
+                "skills-cat1": "Systems & Networks",
+                "skills-cat2": "Cloud & Business",
+                "skills-cat3": "Soft Skills",
+                "sk-win": "Windows Server (AD, GPO, PowerShell)",
+                "sk-ps": "PowerShell Automation",
+                "sk-linux": "GNU/Linux",
+                "sk-virt": "Type 1 & 2 Virtualization",
+                "sk-aws": "Cloud: AWS (EC2, IaC)",
+                "sk-iac": "Infrastructure as Code",
+                "sk-docker": "Docker & Containers",
+                "sk-vlan": "VLAN & Switching",
+                "sk-sw": "Switching & Routing",
+                "sk-serv": "Network Services (DNS, DHCP)",
+                "sk-jira": "Jira / Kanbanize",
+                "sk-kanban": "Kanban Methodology",
+                "sk-m365": "Microsoft 365",
+                "sk-google": "Google Workspace",
+                "sk-res": "Incident Resolution",
+                "sk-adm": "Systems Administration",
+                "sk-doc": "Technical Documentation",
+                "sk-team": "Teamwork",
+                "sk-adapt": "Adaptability",
+                "sk-init": "Creativity & Initiative",
+                "sk-time": "Time Management",
+                "sk-comm": "Communication"
+            }
+        };
+
+        const langButtons = document.querySelectorAll('.lang-btn');
+        const updateProjectLinks = (lang) => {
+            document.querySelectorAll('.project-card[id]').forEach(link => {
+                const baseHref = link.getAttribute('href').split('?')[0];
+                link.setAttribute('href', baseHref + '?lang=' + lang);
+            });
+        };
+
+        const setLanguage = (lang) => {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+            langButtons.forEach(btn => {
+                btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+            });
+            localStorage.setItem('lang', lang);
+            updateProjectLinks(lang);
+        };
+
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
+        });
+
+        // Initialize Language
+        const urlParams = new URLSearchParams(window.location.search);
+        const langFromUrl = urlParams.get('lang');
+        const savedLang = langFromUrl || localStorage.getItem('lang') || 'es';
+        setLanguage(savedLang);
+    </script>
+</body>
+
+</html>

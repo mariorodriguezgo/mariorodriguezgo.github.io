@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n-title="page-title">Sistema Local ISOs Filebrowser - Proyecto</title>
+    <meta name="description" content="Detalles del proyecto de Distribución Local de ISOs con Filebrowser">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: transform 0.2s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+        }
+
+        .project-detail-content {
+            margin-top: 2rem;
+        }
+
+        .project-detail-content h3 {
+            margin: 2rem 0 1rem;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .project-detail-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .tech-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .tech-tag {
+            padding: 0.25rem 0.75rem;
+            background: var(--card-border);
+            border-radius: 2rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .highlight-box {
+            background: rgba(var(--accent-color), 0.05);
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-logo">Mario Rodríguez</span>
+            <div class="nav-controls">
+                <div class="lang-selector">
+                    <button class="lang-btn active" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="cat">CAT</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: calc(var(--nav-height) + 3rem);">
+        <a href="../index.html" class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span data-i18n="back-btn">Volver al Portfolio</span>
+        </a>
+
+        <div class="card">
+            <h1 class="hero-title" style="font-size: 2.5rem;" data-i18n="proj-main-title">Sistema Local de Distribución
+                de ISOs con Filebrowser</h1>
+            <p class="text-secondary" style="margin-top: 0.75rem; font-size: 1.05rem;" data-i18n="proj-subtitle">
+                Proyecto individual — Salesians
+                Sarrià</p>
+            <div class="tech-tags">
+                <span class="tech-tag">Ubuntu 24.04 Server</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Filebrowser</span>
+                <span class="tech-tag">RAID 5</span>
+                <span class="tech-tag">Webmin</span>
+                <span class="tech-tag">Linux</span>
+            </div>
+
+            <div class="project-detail-content">
+
+                <div class="highlight-box">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--text-primary);" data-i18n="prob-title">Problemática
+                        identificada</h4>
+                    <p style="margin-bottom: 0; font-size: 1rem;" data-i18n="prob-desc">
+                        En el entorno educativo de sistemas en Salesians Sarrià, se detectó una limitación importante en
+                        la infraestructura de red: Cuando alumnos intentaban descargar simultáneamente una imagen ISO,
+                        la
+                        red WAN del centro se saturaba.
+                    </p>
+                    <p style="margin-top: 1rem; margin-bottom: 0; font-size: 1rem;" data-i18n="prob-consequences">
+                        <strong>Consecuencias detectadas:</strong>
+                    </p>
+                    <ul class="timeline-list" style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 0.95rem;">
+                        <li data-i18n="prob-c1">Descargas extremadamente lentas.</li>
+                        <li data-i18n="prob-c2">Pérdida de tiempo lectivo.</li>
+                        <li data-i18n="prob-c3">Consumo innecesario de ancho de banda externo.</li>
+                        <li data-i18n="prob-c4">Dependencia total de la conexión a internet.</li>
+                    </ul>
+                    <p style="margin-top: 1rem; margin-bottom: 0; font-size: 1rem;" data-i18n="prob-need">
+                        Era necesario implementar una solución que permitiera distribuir imágenes ISO de forma local,
+                        rápida y segura, sin depender de internet durante las clases.
+                    </p>
+                </div>
+
+                <h3 data-i18n="desc-title">Descripción del Proyecto</h3>
+                <p data-i18n="desc-text">
+                    Diseñé e implementé un servidor local de distribución de archivos utilizando Ubuntu 24.04 Server,
+                    Docker y File Browser.
+                </p>
+                <p data-i18n="desc-solution">
+                    <strong>La solución consistió en:</strong>
+                </p>
+                <ul class="timeline-list" style="margin-left: 2rem;">
+                    <li data-i18n="sol-1">Un servidor dedicado con disco de 500GB para sistema operativo y contenedores.
+                    </li>
+                    <li data-i18n="sol-2">Tres discos de 1TB configurados en RAID 5 para almacenamiento redundante.</li>
+                    <li data-i18n="sol-3">Gestión del almacenamiento mediante Webmin.</li>
+                    <li data-i18n="sol-4">Despliegue de Filebrowser en contenedor Docker con volúmenes persistentes.
+                    </li>
+                    <li data-i18n="sol-5">Personalización visual con el branding institucional de Salesianos.</li>
+                    <li data-i18n="sol-6">Configuración de roles diferenciados para profesores y alumnos.</li>
+                </ul>
+                <p data-i18n="desc-result">
+                    El servidor almacena localmente las imágenes ISO, permitiendo que los alumnos las descarguen a
+                    velocidad de red interna, eliminando la carga sobre la WAN.
+                </p>
+
+                <h3 data-i18n="feat-title">Características Principales</h3>
+
+                <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);"
+                    data-i18n="feat-storage">Almacenamiento
+                    redundante</h4>
+                <ul class="timeline-list" style="margin-left: 2rem;">
+                    <li data-i18n="feat-s1">RAID 5 con 3 discos de 1TB.</li>
+                    <li data-i18n="feat-s2">Tolerancia a fallo de un disco.</li>
+                    <li data-i18n="feat-s3">Separación entre sistema y datos.</li>
+                </ul>
+
+                <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);"
+                    data-i18n="feat-container">Contenerización</h4>
+                <ul class="timeline-list" style="margin-left: 2rem;">
+                    <li data-i18n="feat-ct1">Filebrowser desplegado en Docker.</li>
+                    <li data-i18n="feat-ct2">Uso de volúmenes para persistencia de configuración.</li>
+                    <li data-i18n="feat-ct3">Arquitectura modular y fácilmente replicable.</li>
+                </ul>
+
+                <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);"
+                    data-i18n="feat-users">Gestión de usuarios y
+                    permisos</h4>
+                <ul class="timeline-list" style="margin-left: 2rem;">
+                    <li data-i18n="feat-u1"><strong>Profesor:</strong> subir, editar, eliminar y descargar archivos.
+                    </li>
+                    <li data-i18n="feat-u2"><strong>Alumno:</strong> solo descarga.</li>
+                    <li data-i18n="feat-u3">Control de acceso seguro y estructurado.</li>
+                </ul>
+
+                <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);"
+                    data-i18n="feat-custom">Personalización</h4>
+                <ul class="timeline-list" style="margin-left: 2rem;">
+                    <li data-i18n="feat-cu1">Adaptación del branding con logo institucional.</li>
+                    <li data-i18n="feat-cu2">Organización clara de carpetas por sistemas y versiones.</li>
+                </ul>
+
+                <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);"
+                    data-i18n="feat-network">Optimización de red
+                </h4>
+                <ul class="timeline-list" style="margin-left: 2rem;">
+                    <li data-i18n="feat-n1">Descargas internas a velocidad LAN.</li>
+                    <li data-i18n="feat-n2">Eliminación de saturación de red WAN.</li>
+                    <li data-i18n="feat-n3">Independencia de internet para recursos críticos.</li>
+                </ul>
+
+                <h3 data-i18n="results-title">Resultados Obtenidos</h3>
+                <ul class="timeline-list" style="margin-left: 2rem;">
+                    <li data-i18n="res-1">Eliminación de cuellos de botella en la red externa.</li>
+                    <li data-i18n="res-2">Reducción drástica del tiempo de descarga.</li>
+                    <li data-i18n="res-3">Mejora significativa en la eficiencia de las clases prácticas.</li>
+                    <li data-i18n="res-4">Sistema estable, seguro y escalable.</li>
+                    <li data-i18n="res-5">Infraestructura preparada para ampliar el repositorio de recursos.</li>
+                </ul>
+                <p style="margin-top: 1.5rem;" data-i18n="res-conclusion">
+                    El sistema cumplió completamente el objetivo planteado y resolvió un problema real de
+                    infraestructura en el aula.
+                </p>
+
+                <h3 data-i18n="learn-title">Aprendizaje</h3>
+                <p data-i18n="learn-intro">
+                    Este proyecto me permitió reforzar y aplicar conocimientos en:
+                </p>
+                <ul class="timeline-list" style="margin-left: 2rem;">
+                    <li data-i18n="learn-1">Administración avanzada de sistemas Linux.</li>
+                    <li data-i18n="learn-2">Configuración y gestión de RAID.</li>
+                    <li data-i18n="learn-3">Despliegue de servicios mediante contenedores Docker.</li>
+                    <li data-i18n="learn-4">Gestión de volúmenes y persistencia de datos.</li>
+                    <li data-i18n="learn-5">Diseño de arquitectura orientada a rendimiento y disponibilidad.</li>
+                    <li data-i18n="learn-6">Implementación de control de accesos basado en roles.</li>
+                    <li data-i18n="learn-7">Resolución de problemas reales de red en entorno educativo.</li>
+                </ul>
+                <p style="margin-top: 1.5rem;" data-i18n="learn-conclusion">
+                    Además, desarrollé una visión más práctica sobre cómo optimizar infraestructuras en escenarios con
+                    recursos limitados.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Theme Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const theme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Translation Logic
+        const translations = {
+            es: {
+                "page-title": "Sistema Local ISOs Filebrowser - Proyecto",
+                "back-btn": "Volver al Portfolio",
+                "proj-main-title": "Sistema Local de Distribución de ISOs con Filebrowser",
+                "proj-subtitle": "Proyecto individual — Salesians Sarrià",
+                "prob-title": "Problemática identificada",
+                "prob-desc": "En el entorno educativo de sistemas en Salesians Sarrià, se detectó una limitación importante en la infraestructura de red: Cuando alumnos intentaban descargar simultáneamente una imagen ISO, la red WAN del centro se saturaba.",
+                "prob-consequences": "<strong>Consecuencias detectadas:</strong>",
+                "prob-c1": "Descargas extremadamente lentas.",
+                "prob-c2": "Pérdida de tiempo lectivo.",
+                "prob-c3": "Consumo innecesario de ancho de banda externo.",
+                "prob-c4": "Dependencia total de la conexión a internet.",
+                "prob-need": "Era necesario implementar una solución que permitiera distribuir imágenes ISO de forma local, rápida y segura, sin depender de internet durante las clases.",
+                "desc-title": "Descripción del Proyecto",
+                "desc-text": "Diseñé e implementé un servidor local de distribución de archivos utilizando Ubuntu 24.04 Server, Docker y File Browser.",
+                "desc-solution": "<strong>La solución consistió en:</strong>",
+                "sol-1": "Un servidor dedicado con disco de 500GB para sistema operativo y contenedores.",
+                "sol-2": "Tres discos de 1TB configurados en RAID 5 para almacenamiento redundante.",
+                "sol-3": "Gestión del almacenamiento mediante Webmin.",
+                "sol-4": "Despliegue de Filebrowser en contenedor Docker con volúmenes persistentes.",
+                "sol-5": "Personalización visual con el branding institucional de Salesianos.",
+                "sol-6": "Configuración de roles diferenciados para profesores y alumnos.",
+                "desc-result": "El servidor almacena localmente las imágenes ISO, permitiendo que los alumnos las descarguen a velocidad de red interna, eliminando la carga sobre la WAN.",
+                "feat-title": "Características Principales",
+                "feat-storage": "Almacenamiento redundante",
+                "feat-s1": "RAID 5 con 3 discos de 1TB.",
+                "feat-s2": "Tolerancia a fallo de un disco.",
+                "feat-s3": "Separación entre sistema y datos.",
+                "feat-container": "Contenerización",
+                "feat-ct1": "Filebrowser desplegado en Docker.",
+                "feat-ct2": "Uso de volúmenes para persistencia de configuración.",
+                "feat-ct3": "Arquitectura modular y fácilmente replicable.",
+                "feat-users": "Gestión de usuarios y permisos",
+                "feat-u1": "<strong>Profesor:</strong> subir, editar, eliminar y descargar archivos.",
+                "feat-u2": "<strong>Alumno:</strong> solo descarga.",
+                "feat-u3": "Control de acceso seguro y estructurado.",
+                "feat-custom": "Personalización",
+                "feat-cu1": "Adaptación del branding con logo institucional.",
+                "feat-cu2": "Organización clara de carpetas por sistemas y versiones.",
+                "feat-network": "Optimización de red",
+                "feat-n1": "Descargas internas a velocidad LAN.",
+                "feat-n2": "Eliminación de saturación de red WAN.",
+                "feat-n3": "Independencia de internet para recursos críticos.",
+                "results-title": "Resultados Obtenidos",
+                "res-1": "Eliminación de cuellos de botella en la red externa.",
+                "res-2": "Reducción drástica del tiempo de descarga.",
+                "res-3": "Mejora significativa en la eficiencia de las clases prácticas.",
+                "res-4": "Sistema estable, seguro y escalable.",
+                "res-5": "Infraestructura preparada para ampliar el repositorio de recursos.",
+                "res-conclusion": "El sistema cumplió completamente el objetivo planteado y resolvió un problema real de infraestructura en el aula.",
+                "learn-title": "Aprendizaje",
+                "learn-intro": "Este proyecto me permitió reforzar y aplicar conocimientos en:",
+                "learn-1": "Administración avanzada de sistemas Linux.",
+                "learn-2": "Configuración y gestión de RAID.",
+                "learn-3": "Despliegue de servicios mediante contenedores Docker.",
+                "learn-4": "Gestión de volúmenes y persistencia de datos.",
+                "learn-5": "Diseño de arquitectura orientada a rendimiento y disponibilidad.",
+                "learn-6": "Implementación de control de accesos basado en roles.",
+                "learn-7": "Resolución de problemas reales de red en entorno educativo.",
+                "learn-conclusion": "Además, desarrollé una visión más práctica sobre cómo optimizar infraestructuras en escenarios con recursos limitados."
+            },
+            cat: {
+                "page-title": "Sistema Local ISOs Filebrowser - Projecte",
+                "back-btn": "Tornar al Portfolio",
+                "proj-main-title": "Sistema Local de Distribució d'ISOs amb Filebrowser",
+                "proj-subtitle": "Projecte individual — Salesians Sarrià",
+                "prob-title": "Problemàtica identificada",
+                "prob-desc": "En l'entorn educatiu de sistemes a Salesians Sarrià, es va detectar una limitació important en la infraestructura de xarxa: Quan els alumnes intentaven descarregar simultàniament una imatge ISO, la xarxa WAN del centre se saturava.",
+                "prob-consequences": "<strong>Conseqüències detectades:</strong>",
+                "prob-c1": "Descàrregues extremadament lentes.",
+                "prob-c2": "Pèrdua de temps lectiu.",
+                "prob-c3": "Consum innecessari d'ample de banda extern.",
+                "prob-c4": "Dependència total de la connexió a internet.",
+                "prob-need": "Era necessari implementar una solució que permetés distribuir imatges ISO de forma local, ràpida i segura, sense dependre d'internet durant les classes.",
+                "desc-title": "Descripció del Projecte",
+                "desc-text": "Vaig dissenyar i implementar un servidor local de distribució d'arxius utilitzant Ubuntu 24.04 Server, Docker i File Browser.",
+                "desc-solution": "<strong>La solució va consistir en:</strong>",
+                "sol-1": "Un servidor dedicat amb disc de 500GB per a sistema operatiu i contenidors.",
+                "sol-2": "Tres discos d'1TB configurats en RAID 5 per a emmagatzematge redundant.",
+                "sol-3": "Gestió de l'emmagatzematge mitjançant Webmin.",
+                "sol-4": "Desplegament de Filebrowser en contenidor Docker amb volums persistents.",
+                "sol-5": "Personalització visual amb el branding institucional de Salesians.",
+                "sol-6": "Configuració de rols diferenciats per a professors i alumnes.",
+                "desc-result": "El servidor emmagatzema localment les imatges ISO, permetent que els alumnes les descarreguin a velocitat de xarxa interna, eliminant la càrrega sobre la WAN.",
+                "feat-title": "Característiques Principals",
+                "feat-storage": "Emmagatzematge redundant",
+                "feat-s1": "RAID 5 amb 3 discos d'1TB.",
+                "feat-s2": "Tolerància a fallada d'un disc.",
+                "feat-s3": "Separació entre sistema i dades.",
+                "feat-container": "Contenidorització",
+                "feat-ct1": "Filebrowser desplegat en Docker.",
+                "feat-ct2": "Ús de volums per a persistència de configuració.",
+                "feat-ct3": "Arquitectura modular i fàcilment replicable.",
+                "feat-users": "Gestió d'usuaris i permisos",
+                "feat-u1": "<strong>Professor:</strong> pujar, editar, eliminar i descarregar arxius.",
+                "feat-u2": "<strong>Alumne:</strong> només descàrrega.",
+                "feat-u3": "Control d'accés segur i estructurat.",
+                "feat-custom": "Personalització",
+                "feat-cu1": "Adaptació del branding amb logotip institucional.",
+                "feat-cu2": "Organització clara de carpetes per sistemes i versions.",
+                "feat-network": "Optimització de xarxa",
+                "feat-n1": "Descàrregues internes a velocitat LAN.",
+                "feat-n2": "Eliminació de saturació de xarxa WAN.",
+                "feat-n3": "Independència d'internet per a recursos crítics.",
+                "results-title": "Resultats Obtinguts",
+                "res-1": "Eliminació de colls d'ampolla a la xarxa externa.",
+                "res-2": "Reducció dràstica del temps de descàrrega.",
+                "res-3": "Millora significativa en l'eficiència de les classes pràctiques.",
+                "res-4": "Sistema estable, segur i escalable.",
+                "res-5": "Infraestructura preparada per ampliar el repositori de recursos.",
+                "res-conclusion": "El sistema va complir completament l'objectiu plantejat i va resoldre un problema real d'infraestructura a l'aula.",
+                "learn-title": "Aprenentatge",
+                "learn-intro": "Aquest projecte em va permetre reforçar i aplicar coneixements en:",
+                "learn-1": "Administració avançada de sistemes Linux.",
+                "learn-2": "Configuració i gestió de RAID.",
+                "learn-3": "Desplegament de serveis mitjançant contenidors Docker.",
+                "learn-4": "Gestió de volums i persistència de dades.",
+                "learn-5": "Disseny d'arquitectura orientada a rendiment i disponibilitat.",
+                "learn-6": "Implementació de control d'accessos basat en rols.",
+                "learn-7": "Resolució de problemes reals de xarxa en entorn educatiu.",
+                "learn-conclusion": "A més, vaig desenvolupar una visió més pràctica sobre com optimitzar infraestructures en escenaris amb recursos limitats."
+            },
+            en: {
+                "page-title": "Local ISO Filebrowser System - Project",
+                "back-btn": "Back to Portfolio",
+                "proj-main-title": "Local ISO Distribution System with Filebrowser",
+                "proj-subtitle": "Individual project — Salesians Sarrià",
+                "prob-title": "Identified Problem",
+                "prob-desc": "In the systems education environment at Salesians Sarrià, a significant limitation was identified in the network infrastructure: When students attempted to simultaneously download an ISO image, the center's WAN network became saturated.",
+                "prob-consequences": "<strong>Detected consequences:</strong>",
+                "prob-c1": "Extremely slow downloads.",
+                "prob-c2": "Loss of class time.",
+                "prob-c3": "Unnecessary consumption of external bandwidth.",
+                "prob-c4": "Total dependence on internet connection.",
+                "prob-need": "It was necessary to implement a solution that would allow distributing ISO images locally, quickly and securely, without depending on internet during classes.",
+                "desc-title": "Project Description",
+                "desc-text": "I designed and implemented a local file distribution server using Ubuntu 24.04 Server, Docker and File Browser.",
+                "desc-solution": "<strong>The solution consisted of:</strong>",
+                "sol-1": "A dedicated server with a 500GB disk for the operating system and containers.",
+                "sol-2": "Three 1TB disks configured in RAID 5 for redundant storage.",
+                "sol-3": "Storage management through Webmin.",
+                "sol-4": "Filebrowser deployment in Docker container with persistent volumes.",
+                "sol-5": "Visual customization with Salesians institutional branding.",
+                "sol-6": "Configuration of differentiated roles for teachers and students.",
+                "desc-result": "The server stores ISO images locally, allowing students to download them at internal network speed, eliminating the load on the WAN.",
+                "feat-title": "Main Features",
+                "feat-storage": "Redundant Storage",
+                "feat-s1": "RAID 5 with 3 x 1TB disks.",
+                "feat-s2": "Single disk failure tolerance.",
+                "feat-s3": "Separation between system and data.",
+                "feat-container": "Containerization",
+                "feat-ct1": "Filebrowser deployed in Docker.",
+                "feat-ct2": "Use of volumes for configuration persistence.",
+                "feat-ct3": "Modular and easily replicable architecture.",
+                "feat-users": "User and Permission Management",
+                "feat-u1": "<strong>Teacher:</strong> upload, edit, delete and download files.",
+                "feat-u2": "<strong>Student:</strong> download only.",
+                "feat-u3": "Secure and structured access control.",
+                "feat-custom": "Customization",
+                "feat-cu1": "Branding adaptation with institutional logo.",
+                "feat-cu2": "Clear folder organization by systems and versions.",
+                "feat-network": "Network Optimization",
+                "feat-n1": "Internal downloads at LAN speed.",
+                "feat-n2": "Elimination of WAN network saturation.",
+                "feat-n3": "Internet independence for critical resources.",
+                "results-title": "Results Achieved",
+                "res-1": "Elimination of bottlenecks in the external network.",
+                "res-2": "Drastic reduction in download time.",
+                "res-3": "Significant improvement in hands-on class efficiency.",
+                "res-4": "Stable, secure and scalable system.",
+                "res-5": "Infrastructure ready to expand the resource repository.",
+                "res-conclusion": "The system fully met the stated objective and solved a real infrastructure problem in the classroom.",
+                "learn-title": "Learning",
+                "learn-intro": "This project allowed me to strengthen and apply knowledge in:",
+                "learn-1": "Advanced Linux system administration.",
+                "learn-2": "RAID configuration and management.",
+                "learn-3": "Service deployment using Docker containers.",
+                "learn-4": "Volume management and data persistence.",
+                "learn-5": "Architecture design focused on performance and availability.",
+                "learn-6": "Implementation of role-based access control.",
+                "learn-7": "Solving real network problems in an educational environment.",
+                "learn-conclusion": "Additionally, I developed a more practical vision on how to optimize infrastructures in scenarios with limited resources."
+            }
+        };
+
+        // Get language from URL parameter, localStorage, or default to 'es'
+        const urlParams = new URLSearchParams(window.location.search);
+        const langFromUrl = urlParams.get('lang');
+        const savedLang = langFromUrl || localStorage.getItem('lang') || 'es';
+
+        const langButtons = document.querySelectorAll('.lang-btn');
+
+        const setLanguage = (lang) => {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+            // Update page title
+            const titleKey = 'page-title';
+            if (translations[lang] && translations[lang][titleKey]) {
+                document.title = translations[lang][titleKey];
+            }
+            langButtons.forEach(btn => {
+                btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+            });
+            localStorage.setItem('lang', lang);
+
+            // Update the back link to preserve the language
+            const backLink = document.querySelector('.back-btn');
+            if (backLink) {
+                const baseHref = backLink.getAttribute('href').split('?')[0];
+                backLink.setAttribute('href', baseHref + '?lang=' + lang);
+            }
+        };
+
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
+        });
+
+        // Initialize Language
+        setLanguage(savedLang);
+    </script>
+</body>
+
+</html>
