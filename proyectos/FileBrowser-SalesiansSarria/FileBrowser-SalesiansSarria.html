@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n-title="page-title">Sistema Local ISOs Filebrowser - Proyecto</title>
+    <meta name="description" content="Detalles del proyecto de Distribución Local de ISOs con Filebrowser">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: transform 0.2s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+        }
+
+        .project-detail-content {
+            margin-top: 2rem;
+        }
+
+        .project-detail-content h3 {
+            margin: 2rem 0 1rem;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .project-detail-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .tech-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .tech-tag {
+            padding: 0.25rem 0.75rem;
+            background: var(--card-border);
+            border-radius: 2rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .highlight-box {
+            background: rgba(var(--accent-color), 0.05);
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-logo">Mario Rodríguez</span>
+            <div class="nav-controls">
+                <div class="lang-selector">
+                    <button class="lang-btn active" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="cat">CAT</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: calc(var(--nav-height) + 3rem);">
+        <a href="../../index.html" class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span data-i18n="back-btn">Volver al Portfolio</span>
+        </a>
+
+        <div class="card">
+            <h1 class="hero-title" style="font-size: 2.5rem;" data-i18n="proj-main-title">Sistema Local de Distribución
+                de ISOs con Filebrowser</h1>
+            <p class="text-secondary" style="margin-top: 0.75rem; font-size: 1.05rem;" data-i18n="proj-subtitle">
+                Proyecto individual — Salesians
+                Sarrià</p>
+            <div class="tech-tags">
+                <span class="tech-tag">Ubuntu 24.04 Server</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Filebrowser</span>
+                <span class="tech-tag">RAID 5</span>
+                <span class="tech-tag">Webmin</span>
+                <span class="tech-tag">Linux</span>
+            </div>
+
+            <div class="project-detail-content">
+
+                <div class="highlight-box">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--text-primary);" data-i18n="prob-title">Problemática</h4>
+                    <p style="margin-bottom: 0; font-size: 1rem;" data-i18n="prob-desc">
+                        En el entorno de prácticas de sistemas, la descarga simultánea de imágenes ISO (como Ubuntu 24.04) por parte de múltiples alumnos provocaba la saturación de la red WAN del centro. Esto derivaba en descargas lentas, pérdida de tiempo en clase y una dependencia constante de la conexión a internet para recursos de uso frecuente.
+                    </p>
+                </div>
+
+                <h3 data-i18n="impl-title">Implementación</h3>
+                <p data-i18n="impl-p1">
+                    Para resolver este problema, diseñé e implementé un servidor local que centraliza el almacenamiento y distribución de imágenes ISO dentro de la red interna.
+                </p>
+                <p data-i18n="impl-p2">
+                    La solución se basa en Docker, File Browser y un sistema de almacenamiento en RAID 5 (3 discos de 1TB) para garantizar disponibilidad y tolerancia a fallos.
+                </p>
+                <p data-i18n="impl-p3">
+                    El sistema ofrece una interfaz web accesible desde el navegador y un modelo de acceso basado en roles:
+                </p>
+
+                <h3 data-i18n="access-title">Acceso al sistema</h3>
+                
+                <div style="margin-bottom: 2rem;">
+                    <img src="img/login.png" alt="Login personalizado" style="width: 100%; border-radius: 0.5rem; margin-bottom: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <p style="text-align: center; font-style: italic; color: var(--text-secondary);" data-i18n="access-login">Interfaz de autenticación adaptada con branding institucional.</p>
+                </div>
+
+                <h4 style="margin-bottom: 0.5rem; color: var(--text-primary);" data-i18n="access-student-title">Usuario alumno</h4>
+                <div style="margin-bottom: 2rem;">
+                    <img src="img/permisos-alumno.png" alt="Usuario alumno" style="width: 100%; border-radius: 0.5rem; margin-bottom: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <p style="text-align: center; font-style: italic; color: var(--text-secondary);" data-i18n="access-student">Acceso restringido a la descarga de archivos, evitando modificaciones en el repositorio.</p>
+                </div>
+
+                <h4 style="margin-bottom: 0.5rem; color: var(--text-primary);" data-i18n="access-teacher-title">Usuario profesor</h4>
+                <div style="margin-bottom: 2rem;">
+                    <img src="img/permisos-profesor.png" alt="Usuario profesor" style="width: 100%; border-radius: 0.5rem; margin-bottom: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <p style="text-align: center; font-style: italic; color: var(--text-secondary);" data-i18n="access-teacher">Permisos completos para la gestión de archivos: subida, edición, eliminación y organización.</p>
+                </div>
+
+                <h3 data-i18n="results-title">Resultados</h3>
+                <p data-i18n="results-desc">
+                    La implementación del sistema permitió eliminar la saturación de la red WAN y mejorar significativamente la velocidad de descarga mediante el uso de la red local. Además, se logró centralizar los recursos utilizados en las prácticas, facilitando su acceso y mantenimiento.
+                </p>
+
+                <h3 data-i18n="tech-title">Tecnologías utilizadas</h3>
+                <ul class="timeline-list" style="margin-left: 2rem;">
+                    <li>Docker</li>
+                    <li>File Browser</li>
+                    <li>RAID 5</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Theme Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const theme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Translation Logic
+        const translations = {
+            es: {
+                "page-title": "Sistema Local ISOs Filebrowser - Proyecto",
+                "back-btn": "Volver al Portfolio",
+                "proj-main-title": "Sistema Local de Distribución de ISOs con Filebrowser",
+                "proj-subtitle": "Proyecto individual — Salesians Sarrià",
+                "prob-title": "Problemática",
+                "prob-desc": "En el entorno de prácticas de sistemas, la descarga simultánea de imágenes ISO (como Ubuntu 24.04) por parte de múltiples alumnos provocaba la saturación de la red WAN del centro. Esto derivaba en descargas lentas, pérdida de tiempo en clase y una dependencia constante de la conexión a internet para recursos de uso frecuente.",
+                "impl-title": "Implementación",
+                "impl-p1": "Para resolver este problema, diseñé e implementé un servidor local que centraliza el almacenamiento y distribución de imágenes ISO dentro de la red interna.",
+                "impl-p2": "La solución se basa en Docker, File Browser y un sistema de almacenamiento en RAID 5 (3 discos de 1TB) para garantizar disponibilidad y tolerancia a fallos.",
+                "impl-p3": "El sistema ofrece una interfaz web accesible desde el navegador y un modelo de acceso basado en roles:",
+                "access-title": "Acceso al sistema",
+                "access-login": "Interfaz de autenticación adaptada con branding institucional.",
+                "access-student-title": "Usuario alumno",
+                "access-student": "Acceso restringido a la descarga de archivos, evitando modificaciones en el repositorio.",
+                "access-teacher-title": "Usuario profesor",
+                "access-teacher": "Permisos completos para la gestión de archivos: subida, edición, eliminación y organización.",
+                "results-title": "Resultados",
+                "results-desc": "La implementación del sistema permitió eliminar la saturación de la red WAN y mejorar significativamente la velocidad de descarga mediante el uso de la red local. Además, se logró centralizar los recursos utilizados en las prácticas, facilitando su acceso y mantenimiento.",
+                "tech-title": "Tecnologías utilizadas"
+            },
+            cat: {
+                "page-title": "Sistema Local ISOs Filebrowser - Projecte",
+                "back-btn": "Tornar al Portfolio",
+                "proj-main-title": "Sistema Local de Distribució d'ISOs amb Filebrowser",
+                "proj-subtitle": "Projecte individual — Salesians Sarrià",
+                "prob-title": "Problemàtica",
+                "prob-desc": "A l'entorn de pràctiques de sistemes, la descàrrega simultània d'imatges ISO (com Ubuntu 24.04) per part de múltiples alumnes provocava la saturació de la xarxa WAN del centre. Això derivava en descàrregues lentes, pèrdua de temps a classe i una dependència constant de la connexió a internet per a recursos d'ús freqüent.",
+                "impl-title": "Implementació",
+                "impl-p1": "Per resoldre aquest problema, vaig dissenyar i implementar un servidor local que centralitza l'emmagatzematge i distribució d'imatges ISO dins de la xarxa interna.",
+                "impl-p2": "La solució es basa en Docker, File Browser i un sistema d'emmagatzematge en RAID 5 (3 discos d'1TB) per garantir disponibilitat i tolerància a fallades.",
+                "impl-p3": "El sistema ofereix una interfície web accessible des del navegador i un model d'accés basat en rols:",
+                "access-title": "Accés al sistema",
+                "access-login": "Interfície d'autenticació adaptada amb branding institucional.",
+                "access-student-title": "Usuari alumne",
+                "access-student": "Accés restringit a la descàrrega d'arxius, evitant modificacions al repositori.",
+                "access-teacher-title": "Usuari professor",
+                "access-teacher": "Permisos complets per a la gestió d'arxius: pujada, edició, eliminació i organització.",
+                "results-title": "Resultats",
+                "results-desc": "La implementació del sistema va permetre eliminar la saturació de la xarxa WAN i millorar significativament la velocitat de descàrrega mitjançant l'ús de la xarxa local. A més, es va aconseguir centralitzar els recursos utilitzats en les pràctiques, facilitant-ne el seu accés i manteniment.",
+                "tech-title": "Tecnologies utilitzades"
+            },
+            en: {
+                "page-title": "Local ISO Filebrowser System - Project",
+                "back-btn": "Back to Portfolio",
+                "proj-main-title": "Local ISO Distribution System with Filebrowser",
+                "proj-subtitle": "Individual project — Salesians Sarrià",
+                "prob-title": "Problem",
+                "prob-desc": "In the systems practice environment, the simultaneous download of ISO images (such as Ubuntu 24.04) by multiple students caused the saturation of the center's WAN network. This resulted in slow downloads, loss of class time, and a constant dependence on the internet connection for frequently used resources.",
+                "impl-title": "Implementation",
+                "impl-p1": "To solve this problem, I designed and implemented a local server that centralizes the storage and distribution of ISO images within the internal network.",
+                "impl-p2": "The solution is based on Docker, File Browser, and a RAID 5 storage system (three 1TB disks) to guarantee availability and fault tolerance.",
+                "impl-p3": "The system offers a web interface accessible from the browser and a role-based access model:",
+                "access-title": "System access",
+                "access-login": "Authentication interface customized with institutional branding.",
+                "access-student-title": "Student user",
+                "access-student": "Restricted access to file downloads, preventing modifications in the repository.",
+                "access-teacher-title": "Teacher user",
+                "access-teacher": "Full permissions for file management: upload, edit, delete, and organization.",
+                "results-title": "Results",
+                "results-desc": "The implementation of the system made it possible to eliminate WAN network saturation and significantly improve download speed by using the local network. In addition, frequently used resources for practices were centralized, facilitating their access and maintenance.",
+                "tech-title": "Used technologies"
+            }
+        };
+
+        // Get language from URL parameter, localStorage, or default to 'es'
+        const urlParams = new URLSearchParams(window.location.search);
+        const langFromUrl = urlParams.get('lang');
+        const savedLang = langFromUrl || localStorage.getItem('lang') || 'es';
+
+        const langButtons = document.querySelectorAll('.lang-btn');
+
+        const setLanguage = (lang) => {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+            // Update page title
+            const titleKey = 'page-title';
+            if (translations[lang] && translations[lang][titleKey]) {
+                document.title = translations[lang][titleKey];
+            }
+            langButtons.forEach(btn => {
+                btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+            });
+            localStorage.setItem('lang', lang);
+
+            // Update the back link to preserve the language
+            const backLink = document.querySelector('.back-btn');
+            if (backLink) {
+                const baseHref = backLink.getAttribute('href').split('?')[0];
+                backLink.setAttribute('href', baseHref + '?lang=' + lang);
+            }
+        };
+
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
+        });
+
+        // Initialize Language
+        setLanguage(savedLang);
+    </script>
+</body>
+
+</html>
