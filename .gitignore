@@ -1,0 +1,6 @@
+backup/
+.claude/
+admin/
+admin-server.py
+start-admin.bat
+data.json
