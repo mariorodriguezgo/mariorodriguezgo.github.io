@@ -9,80 +9,61 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
     <style>
-        .back-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            transition: transform 0.2s ease;
+        /* Project page image styles */
+        .proj-img-block {
+            margin-bottom: 2.5rem;
         }
 
-        .back-btn:hover {
-            transform: translateX(-5px);
+        .proj-img-block img {
+            width: 100%;
+            border-radius: var(--radius-card);
+            display: block;
+            border: 1px solid var(--card-border);
+            box-shadow: 0 8px 30px -8px rgba(0, 0, 0, 0.2);
         }
 
-        .project-detail-content {
-            margin-top: 2rem;
+        .proj-img-caption {
+            text-align: center;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 0.04em;
+            margin-top: 0.875rem;
+            font-style: italic;
         }
 
-        .project-detail-content h3 {
-            margin: 2rem 0 1rem;
-            font-size: 1.5rem;
-            color: var(--text-primary);
-        }
-
-        .project-detail-content p {
-            margin-bottom: 1.5rem;
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        .tech-tags {
+        .proj-header-meta {
             display: flex;
-            gap: 0.5rem;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
             flex-wrap: wrap;
-            margin: 1.5rem 0;
-        }
-
-        .tech-tag {
-            padding: 0.25rem 0.75rem;
-            background: var(--card-border);
-            border-radius: 2rem;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--text-primary);
-        }
-
-        .highlight-box {
-            background: rgba(var(--accent-color), 0.05);
-            border-left: 4px solid var(--accent-color);
-            padding: 1.5rem;
-            border-radius: 0 0.5rem 0.5rem 0;
-            margin: 1.5rem 0;
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
 
 <body>
+    <!-- Ambient glows -->
+    <div class="glow-top" aria-hidden="true"></div>
+    <div class="glow-bottom" aria-hidden="true"></div>
+
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
-            <span class="nav-logo">Mario Rodríguez</span>
+            <a href="../../index.html" class="nav-logo">Mario <span class="nav-logo-accent">Rodríguez</span></a>
+
             <div class="nav-controls">
-                <div class="lang-selector">
+                <div class="lang-selector" role="group" aria-label="Idioma">
                     <button class="lang-btn active" data-lang="es">ES</button>
                     <button class="lang-btn" data-lang="cat">CAT</button>
                     <button class="lang-btn" data-lang="en">EN</button>
                 </div>
                 <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
-                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -95,7 +76,7 @@
                         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
-                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
@@ -106,21 +87,26 @@
     </nav>
 
     <div class="container" style="padding-top: calc(var(--nav-height) + 3rem);">
-        <a href="../../index.html" class="back-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+        <a href="../../index.html" class="back-btn" id="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="19" y1="12" x2="5" y2="12"></line>
                 <polyline points="12 19 5 12 12 5"></polyline>
             </svg>
             <span data-i18n="back-btn">Volver al Portfolio</span>
         </a>
 
-        <div class="card">
-            <h1 class="hero-title" style="font-size: 2.5rem;" data-i18n="proj-main-title">Sistema Local de Distribución
-                de ISOs con Filebrowser</h1>
-            <p class="text-secondary" style="margin-top: 0.75rem; font-size: 1.05rem;" data-i18n="proj-subtitle">
-                Proyecto individual — Salesians
-                Sarrià</p>
+        <div class="card reveal">
+            <div class="proj-header-meta">
+                <div>
+                    <h1 class="hero-title" style="font-size: clamp(1.6rem, 4vw, 2.25rem);"
+                        data-i18n="proj-main-title">Sistema Local de Distribución de ISOs con Filebrowser</h1>
+                    <p class="text-secondary" style="margin-top: 0.5rem; font-size: 1rem;" data-i18n="proj-subtitle">
+                        Proyecto individual — Salesians Sarrià</p>
+                </div>
+            </div>
+
             <div class="tech-tags">
                 <span class="tech-tag">Ubuntu 24.04 Server</span>
                 <span class="tech-tag">Docker</span>
@@ -133,8 +119,8 @@
             <div class="project-detail-content">
 
                 <div class="highlight-box">
-                    <h4 style="margin-bottom: 0.5rem; color: var(--text-primary);" data-i18n="prob-title">Problemática</h4>
-                    <p style="margin-bottom: 0; font-size: 1rem;" data-i18n="prob-desc">
+                    <h4 data-i18n="prob-title">Problemática</h4>
+                    <p data-i18n="prob-desc">
                         En el entorno de prácticas de sistemas, la descarga simultánea de imágenes ISO (como Ubuntu 24.04) por parte de múltiples alumnos provocaba la saturación de la red WAN del centro. Esto derivaba en descargas lentas, pérdida de tiempo en clase y una dependencia constante de la conexión a internet para recursos de uso frecuente.
                     </p>
                 </div>
@@ -151,22 +137,22 @@
                 </p>
 
                 <h3 data-i18n="access-title">Acceso al sistema</h3>
-                
-                <div style="margin-bottom: 2rem;">
-                    <img src="img/login.png" alt="Login personalizado" style="width: 100%; border-radius: 0.5rem; margin-bottom: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                    <p style="text-align: center; font-style: italic; color: var(--text-secondary);" data-i18n="access-login">Interfaz de autenticación adaptada con branding institucional.</p>
+
+                <div class="proj-img-block">
+                    <img src="img/login.png" alt="Login personalizado">
+                    <p class="proj-img-caption" data-i18n="access-login">Interfaz de autenticación adaptada con branding institucional.</p>
                 </div>
 
-                <h4 style="margin-bottom: 0.5rem; color: var(--text-primary);" data-i18n="access-student-title">Usuario alumno</h4>
-                <div style="margin-bottom: 2rem;">
-                    <img src="img/permisos-alumno.png" alt="Usuario alumno" style="width: 100%; border-radius: 0.5rem; margin-bottom: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                    <p style="text-align: center; font-style: italic; color: var(--text-secondary);" data-i18n="access-student">Acceso restringido a la descarga de archivos, evitando modificaciones en el repositorio.</p>
+                <h4 data-i18n="access-student-title">Usuario alumno</h4>
+                <div class="proj-img-block">
+                    <img src="img/permisos-alumno.png" alt="Usuario alumno">
+                    <p class="proj-img-caption" data-i18n="access-student">Acceso restringido a la descarga de archivos, evitando modificaciones en el repositorio.</p>
                 </div>
 
-                <h4 style="margin-bottom: 0.5rem; color: var(--text-primary);" data-i18n="access-teacher-title">Usuario profesor</h4>
-                <div style="margin-bottom: 2rem;">
-                    <img src="img/permisos-profesor.png" alt="Usuario profesor" style="width: 100%; border-radius: 0.5rem; margin-bottom: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                    <p style="text-align: center; font-style: italic; color: var(--text-secondary);" data-i18n="access-teacher">Permisos completos para la gestión de archivos: subida, edición, eliminación y organización.</p>
+                <h4 data-i18n="access-teacher-title">Usuario profesor</h4>
+                <div class="proj-img-block">
+                    <img src="img/permisos-profesor.png" alt="Usuario profesor">
+                    <p class="proj-img-caption" data-i18n="access-teacher">Permisos completos para la gestión de archivos: subida, edición, eliminación y organización.</p>
                 </div>
 
                 <h3 data-i18n="results-title">Resultados</h3>
@@ -175,7 +161,7 @@
                 </p>
 
                 <h3 data-i18n="tech-title">Tecnologías utilizadas</h3>
-                <ul class="timeline-list" style="margin-left: 2rem;">
+                <ul class="timeline-list" style="margin-left: 1rem;">
                     <li>Docker</li>
                     <li>File Browser</li>
                     <li>RAID 5</li>
@@ -184,20 +170,64 @@
         </div>
     </div>
 
+    <!-- Back to top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <div class="footer-name">Mario Rodríguez</div>
+                <div class="footer-copy">© 2025 · Administrador de Sistemas Junior</div>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:mario2006rodriguez@gmail.com" class="footer-link" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                        </path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/mariorodriguezgonzalez" target="_blank" rel="noopener"
+                    class="footer-link" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                        </path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
     <script>
-        // Theme Logic
+        /* ===================================================
+           THEME
+        =================================================== */
         const themeToggle = document.getElementById('theme-toggle');
-        const theme = localStorage.getItem('theme') || 'dark';
-        document.documentElement.setAttribute('data-theme', theme);
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
 
         themeToggle.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = current === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
         });
 
-        // Translation Logic
+        /* ===================================================
+           TRANSLATIONS
+        =================================================== */
         const translations = {
             es: {
                 "page-title": "Sistema Local ISOs Filebrowser - Proyecto",
@@ -264,44 +294,66 @@
             }
         };
 
-        // Get language from URL parameter, localStorage, or default to 'es'
-        const urlParams = new URLSearchParams(window.location.search);
-        const langFromUrl = urlParams.get('lang');
-        const savedLang = langFromUrl || localStorage.getItem('lang') || 'es';
-
+        /* ===================================================
+           LANGUAGE
+        =================================================== */
         const langButtons = document.querySelectorAll('.lang-btn');
 
         const setLanguage = (lang) => {
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
-                if (translations[lang] && translations[lang][key]) {
-                    el.innerHTML = translations[lang][key];
-                }
+                if (translations[lang]?.[key]) el.innerHTML = translations[lang][key];
             });
-            // Update page title
-            const titleKey = 'page-title';
-            if (translations[lang] && translations[lang][titleKey]) {
-                document.title = translations[lang][titleKey];
+            /* page title */
+            if (translations[lang]?.['page-title']) {
+                document.title = translations[lang]['page-title'];
             }
-            langButtons.forEach(btn => {
-                btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-            });
+            langButtons.forEach(btn =>
+                btn.classList.toggle('active', btn.getAttribute('data-lang') === lang)
+            );
             localStorage.setItem('lang', lang);
-
-            // Update the back link to preserve the language
-            const backLink = document.querySelector('.back-btn');
-            if (backLink) {
-                const baseHref = backLink.getAttribute('href').split('?')[0];
-                backLink.setAttribute('href', baseHref + '?lang=' + lang);
+            /* keep lang in back link */
+            const backBtn = document.getElementById('back-btn');
+            if (backBtn) {
+                const base = backBtn.getAttribute('href').split('?')[0];
+                backBtn.setAttribute('href', base + '?lang=' + lang);
             }
         };
 
-        langButtons.forEach(btn => {
-            btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
-        });
+        langButtons.forEach(btn =>
+            btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')))
+        );
 
-        // Initialize Language
-        setLanguage(savedLang);
+        /* ===================================================
+           SCROLL REVEAL
+        =================================================== */
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.05 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        /* ===================================================
+           BACK TO TOP
+        =================================================== */
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('visible', window.scrollY > 400);
+        }, { passive: true });
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        /* ===================================================
+           INIT
+        =================================================== */
+        const urlParams   = new URLSearchParams(window.location.search);
+        const langFromUrl = urlParams.get('lang');
+        const initLang    = langFromUrl || localStorage.getItem('lang') || 'es';
+        setLanguage(initLang);
     </script>
 </body>
 
