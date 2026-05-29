@@ -282,6 +282,13 @@ setLang(initLang);
 (function bootLoader() {
   const loader = document.getElementById('loader');
   if (!loader) return;
+
+  // Only play the boot animation once per browser session.
+  if (sessionStorage.getItem('booted')) {
+    loader.remove();
+    return;
+  }
+
   const bar = document.getElementById('loader-bar');
   const lines = [0, 1, 2, 3, 4];
   let i = 0;
@@ -292,6 +299,7 @@ setLang(initLang);
       i++;
       setTimeout(showLine, i === 1 ? 300 : 380);
     } else {
+      sessionStorage.setItem('booted', '1');
       setTimeout(() => { loader.classList.add('hidden'); setTimeout(startTerminalIntro, 400); }, 450);
     }
   }
