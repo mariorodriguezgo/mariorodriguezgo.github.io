@@ -615,10 +615,11 @@ footer{
 
 /* ══════════════════════════════════════════════
    CERTIFICATES — company grouping
+   3 cols: Cisco cert ocupa las 3, Fortinet 1 c/u
 ══════════════════════════════════════════════ */
 .certs-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: .75rem;
   margin-top: 1rem;
 }
