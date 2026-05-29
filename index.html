@@ -290,7 +290,7 @@
       <!-- ── FORTINET (3 certs, one per column) ── -->
       <div class="cert-company-hd">Fortinet</div>
 
-      <a href="https://www.credly.com" target="_blank" rel="noopener" class="cert-link">
+      <a href="https://www.credly.com/badges/58c2378e-38e3-4a6f-9858-ece4457009ac/public_url" target="_blank" rel="noopener" class="cert-link">
         <img src="img/certificados/getting-started-in-cybersecurity-3-0.png" alt="" class="cert-img">
         <div>
           <div class="cert-name" data-i18n="cert5-title">Getting Started in Cybersecurity 3.0</div>
@@ -307,7 +307,7 @@
         </div>
       </a>
 
-      <a href="https://www.credly.com" target="_blank" rel="noopener" class="cert-link">
+      <a href="https://www.credly.com/badges/002a04f2-fa98-4039-ac0d-3e345cc30b60/public_url" target="_blank" rel="noopener" class="cert-link">
         <img src="img/certificados/fortinet-certified-fundamentals-cybersecurity.png" alt="" class="cert-img">
         <div>
           <div class="cert-name" data-i18n="cert4-title">Fortinet Certified Fundamentals Cybersecurity</div>
@@ -544,7 +544,7 @@ setLang(currentLang);
 const cur = document.getElementById('cursor');
 let mx = 0, my = 0, cx = 0, cy = 0;
 document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-(function anim() { cx += (mx - cx) * .16; cy += (my - cy) * .16; cur.style.left = cx + 'px'; cur.style.top = cy + 'px'; requestAnimationFrame(anim); })();
+(function anim() { cx += (mx - cx) * .42; cy += (my - cy) * .42; cur.style.left = cx + 'px'; cur.style.top = cy + 'px'; requestAnimationFrame(anim); })();
 document.querySelectorAll('a,button,.skill-tag,.cert-link,.project-link').forEach(el => {
   el.addEventListener('mouseenter', () => cur.classList.add('hover'));
   el.addEventListener('mouseleave', () => cur.classList.remove('hover'));
