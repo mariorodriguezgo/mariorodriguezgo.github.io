@@ -45,7 +45,3 @@ apasionado por los **sistemas, las redes y la ciberseguridad**. Certificado por 
 </div>
 
 ---
-
-<div align="center">
-<sub>🌿 Rama <code>backup-v1</code> conserva la primera versión del diseño (glassmorphism).</sub>
-</div>
