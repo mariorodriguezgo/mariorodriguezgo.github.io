@@ -591,6 +591,64 @@ footer{
 }
 
 /* ══════════════════════════════════════════════
+   TERMINAL — LIGHT MODE FIX
+   El terminal siempre es oscuro (es un terminal),
+   pero en light mode se le da un marco visual claro.
+══════════════════════════════════════════════ */
+[data-theme="light"] .bento-terminal {
+  border-color: rgba(0,0,0,.22);
+  box-shadow: 0 4px 24px rgba(0,0,0,.14);
+}
+[data-theme="light"] .bento-terminal:hover {
+  border-color: rgba(var(--accent-rgb),.45);
+  box-shadow: 0 16px 48px rgba(0,0,0,.18);
+}
+[data-theme="light"] .terminal-wrap {
+  background: #0D1424;   /* azul-oscuro intencional, no negro puro */
+}
+[data-theme="light"] .terminal-bar {
+  background: #17213A;
+  border-bottom-color: rgba(255,255,255,.05);
+}
+[data-theme="light"] .terminal-title { color: #4A5A70; }
+[data-theme="light"] .terminal-hint  { color: #2D3848; }
+
+/* ══════════════════════════════════════════════
+   CERTIFICATES — company grouping
+══════════════════════════════════════════════ */
+.certs-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem;
+  margin-top: 1rem;
+}
+
+.cert-company-hd {
+  grid-column: 1 / -1;
+  font-family: var(--f-mono);
+  font-size: .58rem;
+  font-weight: 600;
+  color: var(--text-3);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: .375rem 0 .2rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  margin-top: .25rem;
+}
+.cert-company-hd:first-child { margin-top: 0; }
+.cert-company-hd::before {
+  content: '//';
+  color: var(--accent);
+  font-size: .54rem;
+  letter-spacing: .02em;
+}
+
+.cert-link.cert-solo { grid-column: 1 / -1; }
+
+/* ══════════════════════════════════════════════
    PROJECT PAGE
 ══════════════════════════════════════════════ */
 .proj-page{max-width:860px;margin:0 auto;padding:calc(var(--nav-h) + 24px) 16px 80px;position:relative;z-index:1}
