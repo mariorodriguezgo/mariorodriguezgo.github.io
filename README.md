@@ -19,40 +19,6 @@ Diseño *bento grid* con terminal interactiva y pantalla de arranque animada.
 
 ---
 
-## ✨ Características
-
-- 🎨 **Diseño Bento Grid** — layout modular y arquitectónico inspirado en Raycast / Linear.
-- 🌗 **Modo claro / oscuro** — con preferencia guardada en `localStorage` (claro por defecto).
-- 🌍 **Trilingüe** — Español · Català · English, con persistencia entre páginas.
-- 💻 **Terminal interactiva** — comandos reales (`whoami`, `skills`, `certs`, `help`...).
-- ⌨️ **Pantalla de arranque** — secuencia de *boot* animada (una vez por sesión).
-- 🖱️ **Cursor personalizado** — punto que sigue al ratón con interacción en hover.
-- 📱 **100% responsive** — menú hamburguesa y reorganización en móvil.
-- ⚡ **Ligero y sin dependencias** — HTML, CSS y JS *vanilla*. Cero frameworks.
-
----
-
-## 🗂️ Estructura del proyecto
-
-```
-mariorodriguezgo.github.io/
-├── index.html              # Inicio: hero, sobre mí, terminal, experiencia, formación
-├── habilidades.html        # Habilidades & conocimientos
-├── certificados.html       # Certificaciones (Cisco · Fortinet)
-├── proyectos.html          # Listado de proyectos
-├── css/
-│   └── style.css           # Estilos y variables de tema
-├── js/
-│   └── main.js             # Lógica común: i18n, tema, terminal, cursor, loader
-├── img/
-│   ├── foto.jpg            # Foto de perfil (optimizada)
-│   └── certificados/       # Insignias de certificaciones
-└── proyectos/
-    └── FileBrowser-SalesiansSarria/   # Página de detalle de proyecto
-```
-
----
-
 ## 🚀 Stack técnico
 
 | Capa | Tecnología |
@@ -65,24 +31,6 @@ mariorodriguezgo.github.io/
 
 ---
 
-## 🛠️ Desarrollo local
-
-No requiere build ni dependencias. Basta con un servidor estático:
-
-```bash
-# Clonar el repositorio
-git clone https://github.com/mariorodriguezgo/mariorodriguezgo.github.io.git
-cd mariorodriguezgo.github.io
-
-# Servir localmente (elige una opción)
-python -m http.server 8000
-# o
-npx serve
-```
-
-Abre `http://localhost:8000` en el navegador.
-
----
 
 ## 🎓 Sobre mí
 
