@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habilidades — Mario Rodríguez</title>
+  <meta name="description" content="Habilidades y conocimientos técnicos de Mario Rodríguez González">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" data-keep-lang>Mario Rodríguez</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html"        class="nav-link" data-keep-lang data-i18n-nav="nav-home">Inicio</a></li>
+      <li><a href="habilidades.html"  class="nav-link" data-keep-lang data-i18n-nav="nav-skills">Habilidades</a></li>
+      <li><a href="certificados.html" class="nav-link" data-keep-lang data-i18n-nav="nav-certs">Certificados</a></li>
+      <li><a href="proyectos.html"    class="nav-link" data-keep-lang data-i18n-nav="nav-proj">Proyectos</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-selector" role="group" aria-label="Idioma">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="cat">CAT</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<nav class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <a href="index.html"        class="mobile-nav-link" data-keep-lang data-i18n-nav="nav-home">Inicio</a>
+  <a href="habilidades.html"  class="mobile-nav-link" data-keep-lang data-i18n-nav="nav-skills">Habilidades</a>
+  <a href="certificados.html" class="mobile-nav-link" data-keep-lang data-i18n-nav="nav-certs">Certificados</a>
+  <a href="proyectos.html"    class="mobile-nav-link" data-keep-lang data-i18n-nav="nav-proj">Proyectos</a>
+</nav>
+
+<div class="subpage">
+
+  <div class="page-header reveal">
+    <div class="section-label" data-i18n-nav="nav-skills">Habilidades</div>
+    <h1 class="page-title" data-i18n="skills-title">Habilidades & Conocimientos</h1>
+    <p class="page-sub" data-i18n="page-skills-sub">Tecnologías, herramientas y aptitudes que manejo en el día a día.</p>
+  </div>
+
+  <div class="skills-cols reveal reveal-d1">
+
+    <div class="skill-col">
+      <div class="skill-col-head"><span class="skill-dot"></span><span data-i18n="skills-cat1">Sistemas & Redes</span></div>
+      <div class="skill-tags">
+        <span class="skill-tag" data-i18n="sk-win">Windows Server (AD, GPO, PS)</span>
+        <span class="skill-tag" data-i18n="sk-linux">GNU/Linux</span>
+        <span class="skill-tag" data-i18n="sk-virt">Virtualización (Tipo 1 y 2)</span>
+        <span class="skill-tag" data-i18n="sk-docker">Docker & Contenedores</span>
+        <span class="skill-tag" data-i18n="sk-vlan">VLAN & Switching</span>
+        <span class="skill-tag" data-i18n="sk-serv">Servicios de Red (DNS, DHCP)</span>
+      </div>
+    </div>
+
+    <div class="skill-col">
+      <div class="skill-col-head"><span class="skill-dot"></span><span data-i18n="skills-cat2">Cloud & Empresa</span></div>
+      <div class="skill-tags">
+        <span class="skill-tag" data-i18n="sk-aws">Cloud: AWS (EC2, IaC)</span>
+        <span class="skill-tag" data-i18n="sk-adm">Administración de Sistemas</span>
+        <span class="skill-tag" data-i18n="sk-doc">Documentación Técnica</span>
+        <span class="skill-tag" data-i18n="sk-jira">Jira / Kanbanize</span>
+        <span class="skill-tag" data-i18n="sk-m365">Microsoft 365</span>
+        <span class="skill-tag" data-i18n="sk-google">Google Workspace</span>
+      </div>
+    </div>
+
+    <div class="skill-col">
+      <div class="skill-col-head"><span class="skill-dot"></span><span data-i18n="skills-cat3">Aptitudes</span></div>
+      <div class="skill-tags">
+        <span class="skill-tag" data-i18n="sk-res">Resolución de Incidencias</span>
+        <span class="skill-tag" data-i18n="sk-team">Trabajo en Equipo</span>
+        <span class="skill-tag" data-i18n="sk-adapt">Adaptabilidad</span>
+        <span class="skill-tag" data-i18n="sk-init">Creatividad e Iniciativa</span>
+        <span class="skill-tag" data-i18n="sk-time">Gestión del Tiempo</span>
+        <span class="skill-tag" data-i18n="sk-comm">Comunicación</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<footer>
+  <span class="footer-copy">© 2025 · Mario Rodríguez González · Soporte IT N1</span>
+  <div class="footer-links">
+    <a href="mailto:mario2006rodriguez@gmail.com" class="footer-link" aria-label="Email">
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/mariorodriguezgonzalez" target="_blank" rel="noopener" class="footer-link" aria-label="LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <a href="https://github.com/mariorodriguezgo" target="_blank" rel="noopener" class="footer-link" aria-label="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
