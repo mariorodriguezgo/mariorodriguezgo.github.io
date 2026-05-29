@@ -83,11 +83,11 @@
     <div>
       <div class="hero-badge">
         <span class="hero-badge-dot" aria-hidden="true"></span>
-        <span data-i18n="hero-tag">Disponible para Prácticas</span>
+        <span data-i18n="hero-tag">Becario IT · Larian Studios Barcelona</span>
       </div>
       <h1 class="hero-name" data-i18n="hero-title">¡Hola! Soy <span>Mario Rodríguez</span></h1>
       <p class="hero-role" data-i18n="hero-subtitle">Estudiante de ASIR | Técnico de Soporte IT N1</p>
-      <p class="hero-bio"  data-i18n="hero-bio">Apasionado por los sistemas, las redes y la ciberseguridad. Busco prácticas donde pueda aportar desde el primer día y crecer junto a profesionales del sector IT.</p>
+      <p class="hero-bio"  data-i18n="hero-bio">Estudiante de ASIR apasionado por los sistemas, las redes y la ciberseguridad. Actualmente becario de Soporte IT en Larian Studios Barcelona.</p>
     </div>
     <div class="hero-links">
       <a href="mailto:mario2006rodriguez@gmail.com" class="hero-link">
@@ -186,6 +186,17 @@
     <h2 class="section-title" data-i18n="exp-title">Experiencia</h2>
     <div class="exp-items">
 
+      <!-- Larian Studios — nuevo, más reciente -->
+      <div class="exp-item">
+        <div class="exp-date" data-i18n="exp3-date">06/2026 – Presente</div>
+        <div class="exp-body">
+          <div class="exp-title" data-i18n="exp3-title">Becario Soporte Técnico IT</div>
+          <div class="exp-company">Larian Studios · Barcelona</div>
+        </div>
+      </div>
+
+      <div class="exp-divider"></div>
+
       <div class="exp-item">
         <div class="exp-date" data-i18n="exp2-date">12/2025 – 05/2026</div>
         <div class="exp-body">
@@ -264,8 +275,11 @@
     <h2 class="section-title" data-i18n="cert-title">Certificados</h2>
     <div class="certs-inner">
 
+      <!-- ── CISCO ── -->
+      <div class="cert-company-hd">Cisco Networking Academy</div>
+
       <a href="https://www.credly.com/badges/3e9da3a5-066f-4d5e-9f65-729df75c4fe7/public_url"
-         target="_blank" rel="noopener" class="cert-link">
+         target="_blank" rel="noopener" class="cert-link cert-solo">
         <img src="img/certificados/introduction-to-cybersecurity.png" alt="" class="cert-img">
         <div>
           <div class="cert-name" data-i18n="cert1-title">Introducción a la Ciberseguridad</div>
@@ -273,16 +287,18 @@
         </div>
       </a>
 
+      <!-- ── FORTINET ── -->
+      <div class="cert-company-hd">Fortinet</div>
+
       <a href="https://www.credly.com/badges/b58f1d37-9ad4-4418-a72c-9f8a2407638c/public_url"
          target="_blank" rel="noopener" class="cert-link">
         <img src="img/certificados/introduction-to-the-threat-landscape-3-0.png" alt="" class="cert-img">
         <div>
           <div class="cert-name" data-i18n="cert3-title">Introduction to the Threat Landscape 3.0</div>
-          <div class="cert-issuer" data-i18n="cert3-desc">Cisco Networking Academy</div>
+          <div class="cert-issuer" data-i18n="cert3-desc">Fortinet</div>
         </div>
       </a>
 
-      <!-- NEW: Fortinet -->
       <a href="https://www.credly.com" target="_blank" rel="noopener" class="cert-link">
         <div class="cert-img-icon" aria-hidden="true">
           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -341,13 +357,15 @@ const T = {
     "nav-about":"Sobre mí","nav-skills":"Habilidades","nav-exp":"Experiencia",
     "nav-edu":"Formación","nav-certs":"Certificados","nav-proj":"Proyectos","nav-lang":"Idiomas",
     "term-hint":"escribe 'help'",
-    "hero-tag":"Disponible para Prácticas",
+    "hero-tag":"Becario IT · Larian Studios Barcelona",
     "hero-title":"¡Hola! Soy <span>Mario Rodríguez</span>",
     "hero-subtitle":"Estudiante de ASIR | Técnico de Soporte IT N1",
-    "hero-bio":"Apasionado por los sistemas, las redes y la ciberseguridad. Busco prácticas donde pueda aportar desde el primer día y crecer junto a profesionales del sector IT.",
+    "hero-bio":"Estudiante de ASIR apasionado por los sistemas, las redes y la ciberseguridad. Actualmente becario de Soporte IT en Larian Studios Barcelona.",
     "about-title":"Sobre mí",
-    "about-desc":"Estudiante de ASIR en Salesians Sarrià con experiencia en soporte técnico IT. Resuelvo incidencias de hardware y software, mantengo infraestructuras y disfruto enfrentándome a problemas técnicos reales. Proactivo, con ganas de seguir creciendo en sistemas, redes y ciberseguridad junto a profesionales con experiencia.",
-    "exp-title":"Experiencia","exp2-title":"Profesor de Refuerzo",
+    "about-desc":"Estudiante de ASIR en Salesians Sarrià con experiencia práctica en soporte técnico IT. Resuelvo incidencias de hardware y software, mantengo infraestructuras y disfruto enfrentándome a problemas técnicos reales. Proactivo, con pasión por los sistemas, las redes y la ciberseguridad.",
+    "exp-title":"Experiencia",
+    "exp3-title":"Becario Soporte Técnico IT","exp3-date":"06/2026 – Presente",
+    "exp2-title":"Profesor de Refuerzo",
     "exp2-l1":"Apoyo académico a alumnos de SMR en contenidos teóricos y prácticos.",
     "exp2-l2":"Resolución de dudas, preparación de exámenes y atención personalizada.",
     "exp2-date":"12/2025 – 05/2026",
@@ -375,7 +393,7 @@ const T = {
     "sk-time":"Gestión del Tiempo","sk-comm":"Comunicación",
     "cert-title":"Certificados","cert1-title":"Introducción a la Ciberseguridad",
     "cert1-desc":"Cisco Networking Academy","cert3-title":"Introduction to the Threat Landscape 3.0",
-    "cert3-desc":"Cisco Networking Academy","cert4-title":"Fortinet Certified Fundamentals Cybersecurity",
+    "cert3-desc":"Fortinet","cert4-title":"Fortinet Certified Fundamentals Cybersecurity",
     "cert4-desc":"Fortinet",
     "proj-title":"Proyectos","proj3-title":"Distribución ISO Filebrowser",
     "proj3-desc":"Servidor local de distribución de ISOs con Docker y RAID 5. Elimina la saturación de red WAN en entorno educativo.",
@@ -385,13 +403,15 @@ const T = {
     "nav-about":"Sobre mi","nav-skills":"Habilitats","nav-exp":"Experiència",
     "nav-edu":"Formació","nav-certs":"Certificats","nav-proj":"Projectes","nav-lang":"Idiomes",
     "term-hint":"escriu 'help'",
-    "hero-tag":"Disponible per a Pràctiques",
+    "hero-tag":"Becari IT · Larian Studios Barcelona",
     "hero-title":"Hola! Soc <span>Mario Rodríguez</span>",
     "hero-subtitle":"Estudiant de ASIR | Tècnic de Suport IT N1",
-    "hero-bio":"Apassionat pels sistemes, les xarxes i la ciberseguretat. Busco pràctiques on pugui aportar des del primer dia i créixer al costat de professionals del sector IT.",
+    "hero-bio":"Estudiant de ASIR apassionat pels sistemes, les xarxes i la ciberseguretat. Actualment becari de Suport IT a Larian Studios Barcelona.",
     "about-title":"Sobre mi",
-    "about-desc":"Estudiant de ASIR a Salesians Sarrià amb experiència en suport tècnic IT. Resolc incidències de maquinari i programari, mantinc infraestructures i gaudeixo enfrontant-me a problemes tècnics reals. Proactiu, amb ganes de seguir creixent en sistemes, xarxes i ciberseguretat.",
-    "exp-title":"Experiència","exp2-title":"Professor de Reforç",
+    "about-desc":"Estudiant de ASIR a Salesians Sarrià amb experiència pràctica en suport tècnic IT. Resolc incidències de maquinari i programari, mantinc infraestructures i gaudeixo enfrontant-me a problemes tècnics reals. Proactiu, amb passió pels sistemes, les xarxes i la ciberseguretat.",
+    "exp-title":"Experiència",
+    "exp3-title":"Becari Suport Tècnic IT","exp3-date":"06/2026 – Actualitat",
+    "exp2-title":"Professor de Reforç",
     "exp2-l1":"Suport acadèmic a alumnes de SMR en continguts teòrics i pràctics.",
     "exp2-l2":"Resolució de dubtes, preparació d'exàmens i atenció personalitzada.",
     "exp2-date":"12/2025 – 05/2026",
@@ -419,7 +439,7 @@ const T = {
     "sk-time":"Gestió del Temps","sk-comm":"Comunicació",
     "cert-title":"Certificats","cert1-title":"Introducció a la Ciberseguretat",
     "cert1-desc":"Cisco Networking Academy","cert3-title":"Introduction to the Threat Landscape 3.0",
-    "cert3-desc":"Cisco Networking Academy","cert4-title":"Fortinet Certified Fundamentals Cybersecurity",
+    "cert3-desc":"Fortinet","cert4-title":"Fortinet Certified Fundamentals Cybersecurity",
     "cert4-desc":"Fortinet",
     "proj-title":"Projectes","proj3-title":"Distribució ISO Filebrowser",
     "proj3-desc":"Servidor local de distribució d'ISOs amb Docker i RAID 5. Elimina la saturació de xarxa WAN en entorn educatiu.",
@@ -429,13 +449,15 @@ const T = {
     "nav-about":"About","nav-skills":"Skills","nav-exp":"Experience",
     "nav-edu":"Education","nav-certs":"Certificates","nav-proj":"Projects","nav-lang":"Languages",
     "term-hint":"type 'help'",
-    "hero-tag":"Available for Internships",
+    "hero-tag":"IT Intern · Larian Studios Barcelona",
     "hero-title":"Hi! I am <span>Mario Rodríguez</span>",
     "hero-subtitle":"ASIR Student | IT Support Technician N1",
-    "hero-bio":"Passionate about systems, networks and cybersecurity. Looking for internships where I can contribute from day one and grow alongside experienced IT professionals.",
+    "hero-bio":"ASIR student passionate about systems, networks and cybersecurity. Currently an IT Support intern at Larian Studios Barcelona.",
     "about-title":"About Me",
-    "about-desc":"ASIR student at Salesians Sarrià with hands-on IT support experience. I troubleshoot hardware and software incidents, maintain infrastructure and enjoy solving real technical problems. Proactive and eager to keep growing in systems, networks and cybersecurity.",
-    "exp-title":"Experience","exp2-title":"Tutoring Teacher",
+    "about-desc":"ASIR student at Salesians Sarrià with hands-on IT support experience. I troubleshoot hardware and software incidents, maintain infrastructure and enjoy solving real technical problems. Proactive, with a passion for systems, networks and cybersecurity.",
+    "exp-title":"Experience",
+    "exp3-title":"IT Support Intern","exp3-date":"06/2026 – Present",
+    "exp2-title":"Tutoring Teacher",
     "exp2-l1":"Academic support to SMR students covering theoretical and practical content.",
     "exp2-l2":"Doubt resolution, exam preparation and personalised attention.",
     "exp2-date":"12/2025 – 05/2026",
@@ -463,7 +485,7 @@ const T = {
     "sk-time":"Time Management","sk-comm":"Communication",
     "cert-title":"Certificates","cert1-title":"Introduction to Cybersecurity",
     "cert1-desc":"Cisco Networking Academy","cert3-title":"Introduction to the Threat Landscape 3.0",
-    "cert3-desc":"Cisco Networking Academy","cert4-title":"Fortinet Certified Fundamentals Cybersecurity",
+    "cert3-desc":"Fortinet","cert4-title":"Fortinet Certified Fundamentals Cybersecurity",
     "cert4-desc":"Fortinet",
     "proj-title":"Projects","proj3-title":"Filebrowser ISO Distribution",
     "proj3-desc":"Local ISO distribution server using Docker and RAID 5. Eliminates WAN network saturation in an educational environment.",
