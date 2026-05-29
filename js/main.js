@@ -163,7 +163,7 @@ const T = {
    THEME
 ══════════════════════════════════════════════ */
 (function theme() {
-  document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+  document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');
   const btn = document.getElementById('theme-toggle');
   if (!btn) return;
   btn.addEventListener('click', () => {
