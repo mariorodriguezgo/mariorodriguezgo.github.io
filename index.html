@@ -8,18 +8,15 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Custom cursor -->
 <div class="cursor" id="cursor"></div>
 
-<!-- Navbar -->
 <nav class="navbar">
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">Mario Rodríguez</a>
-
     <ul class="nav-links" role="list">
       <li><a href="#about"        class="nav-link" data-i18n-nav="nav-about">Sobre mí</a></li>
       <li><a href="#skills"       class="nav-link" data-i18n-nav="nav-skills">Habilidades</a></li>
@@ -28,7 +25,6 @@
       <li><a href="#certificates" class="nav-link" data-i18n-nav="nav-certs">Certificados</a></li>
       <li><a href="#projects"     class="nav-link" data-i18n-nav="nav-proj">Proyectos</a></li>
     </ul>
-
     <div class="nav-right">
       <div class="lang-selector" role="group" aria-label="Idioma">
         <button class="lang-btn active" data-lang="es">ES</button>
@@ -36,8 +32,8 @@
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
       <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
-        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
       <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span><span></span>
@@ -46,7 +42,6 @@
   </div>
 </nav>
 
-<!-- Mobile menu -->
 <nav class="mobile-menu" id="mobile-menu" aria-hidden="true">
   <a href="#about"        class="mobile-nav-link" data-i18n-nav="nav-about">Sobre mí</a>
   <a href="#skills"       class="mobile-nav-link" data-i18n-nav="nav-skills">Habilidades</a>
@@ -56,7 +51,6 @@
   <a href="#projects"     class="mobile-nav-link" data-i18n-nav="nav-proj">Proyectos</a>
 </nav>
 
-<!-- ═══════════════════ BENTO GRID ═══════════════════ -->
 <main class="bento-grid" id="hero">
 
   <!-- HERO -->
@@ -68,22 +62,22 @@
       </div>
       <h1 class="hero-name" data-i18n="hero-title">¡Hola! Soy <span>Mario Rodríguez</span></h1>
       <p class="hero-role" data-i18n="hero-subtitle">Administrador de Sistemas Junior | Técnico Informático</p>
-      <p class="hero-bio" data-i18n="hero-bio">Estudiante de ASIR, responsable y con facilidad para aprender y adaptarme a nuevos entornos.</p>
+      <p class="hero-bio"  data-i18n="hero-bio">Estudiante de ASIR, responsable y con facilidad para aprender y adaptarme a nuevos entornos.</p>
     </div>
     <div class="hero-links">
       <a href="mailto:mario2006rodriguez@gmail.com" class="hero-link">
-        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         mario2006rodriguez@gmail.com
       </a>
       <a href="https://www.linkedin.com/in/mariorodriguezgonzalez" target="_blank" rel="noopener" class="hero-link">
-        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         LinkedIn
       </a>
     </div>
   </section>
 
   <!-- PHOTO -->
-  <div class="bento-card bento-photo" aria-hidden="true">
+  <div class="bento-card bento-photo">
     <img src="img/foto.png" alt="Mario Rodríguez" class="photo-img">
     <div class="photo-overlay">
       <div class="photo-meta">
@@ -95,57 +89,60 @@
 
   <!-- ABOUT -->
   <section class="bento-card bento-about reveal" id="about">
-    <div class="section-label">01 —</div>
+    <div class="section-label" data-i18n-nav="nav-about">Sobre mí</div>
     <h2 class="section-title" data-i18n="about-title">Sobre mí</h2>
     <p class="about-text" data-i18n="about-desc">Estudiante de ASIR con conocimientos en administración de sistemas y redes, orientado a entornos de soporte técnico. Experiencia en resolución de incidencias, mantenimiento de equipos y gestión básica de infraestructuras IT. Destaco por mi actitud proactiva, capacidad de aprendizaje continuo y motivación por desarrollarme profesionalmente en el ámbito tecnológico.</p>
   </section>
 
   <!-- SKILLS -->
   <section class="bento-card bento-skills reveal reveal-d1" id="skills">
-    <div class="section-label">02 —</div>
+    <div class="section-label" data-i18n-nav="nav-skills">Habilidades</div>
     <h2 class="section-title" data-i18n="skills-title">Habilidades & Conocimientos</h2>
-    <div class="skills-inner">
+    <div class="skills-cols">
 
-      <!-- Col 1: Sistemas & Redes -->
       <div class="skill-col">
-        <div class="skill-col-title">
+        <div class="skill-col-head">
           <span class="skill-dot"></span>
           <span data-i18n="skills-cat1">Sistemas & Redes</span>
         </div>
-        <div class="skill-item" data-i18n="sk-win">Windows Server (AD, GPO, PS)</div>
-        <div class="skill-item" data-i18n="sk-linux">GNU/Linux</div>
-        <div class="skill-item" data-i18n="sk-virt">Virtualización (Tipo 1 y 2)</div>
-        <div class="skill-item" data-i18n="sk-docker">Docker & Contenedores</div>
-        <div class="skill-item" data-i18n="sk-vlan">VLAN & Switching</div>
-        <div class="skill-item" data-i18n="sk-serv">Servicios de Red (DNS, DHCP)</div>
+        <div class="skill-tags">
+          <span class="skill-tag" data-i18n="sk-win">Windows Server (AD, GPO, PS)</span>
+          <span class="skill-tag" data-i18n="sk-linux">GNU/Linux</span>
+          <span class="skill-tag" data-i18n="sk-virt">Virtualización (Tipo 1 y 2)</span>
+          <span class="skill-tag" data-i18n="sk-docker">Docker & Contenedores</span>
+          <span class="skill-tag" data-i18n="sk-vlan">VLAN & Switching</span>
+          <span class="skill-tag" data-i18n="sk-serv">Servicios de Red (DNS, DHCP)</span>
+        </div>
       </div>
 
-      <!-- Col 2: Cloud & Empresa -->
       <div class="skill-col">
-        <div class="skill-col-title">
+        <div class="skill-col-head">
           <span class="skill-dot"></span>
           <span data-i18n="skills-cat2">Cloud & Empresa</span>
         </div>
-        <div class="skill-item" data-i18n="sk-aws">Cloud: AWS (EC2, IaC)</div>
-        <div class="skill-item" data-i18n="sk-adm">Administración de Sistemas</div>
-        <div class="skill-item" data-i18n="sk-doc">Documentación Técnica</div>
-        <div class="skill-item" data-i18n="sk-jira">Jira / Kanbanize</div>
-        <div class="skill-item" data-i18n="sk-m365">Microsoft 365</div>
-        <div class="skill-item" data-i18n="sk-google">Google Workspace</div>
+        <div class="skill-tags">
+          <span class="skill-tag" data-i18n="sk-aws">Cloud: AWS (EC2, IaC)</span>
+          <span class="skill-tag" data-i18n="sk-adm">Administración de Sistemas</span>
+          <span class="skill-tag" data-i18n="sk-doc">Documentación Técnica</span>
+          <span class="skill-tag" data-i18n="sk-jira">Jira / Kanbanize</span>
+          <span class="skill-tag" data-i18n="sk-m365">Microsoft 365</span>
+          <span class="skill-tag" data-i18n="sk-google">Google Workspace</span>
+        </div>
       </div>
 
-      <!-- Col 3: Aptitudes -->
       <div class="skill-col">
-        <div class="skill-col-title">
+        <div class="skill-col-head">
           <span class="skill-dot"></span>
           <span data-i18n="skills-cat3">Aptitudes</span>
         </div>
-        <div class="skill-item" data-i18n="sk-res">Resolución de Incidencias</div>
-        <div class="skill-item" data-i18n="sk-team">Trabajo en Equipo</div>
-        <div class="skill-item" data-i18n="sk-adapt">Adaptabilidad</div>
-        <div class="skill-item" data-i18n="sk-init">Creatividad e Iniciativa</div>
-        <div class="skill-item" data-i18n="sk-time">Gestión del Tiempo</div>
-        <div class="skill-item" data-i18n="sk-comm">Comunicación</div>
+        <div class="skill-tags">
+          <span class="skill-tag" data-i18n="sk-res">Resolución de Incidencias</span>
+          <span class="skill-tag" data-i18n="sk-team">Trabajo en Equipo</span>
+          <span class="skill-tag" data-i18n="sk-adapt">Adaptabilidad</span>
+          <span class="skill-tag" data-i18n="sk-init">Creatividad e Iniciativa</span>
+          <span class="skill-tag" data-i18n="sk-time">Gestión del Tiempo</span>
+          <span class="skill-tag" data-i18n="sk-comm">Comunicación</span>
+        </div>
       </div>
 
     </div>
@@ -153,12 +150,12 @@
 
   <!-- EXPERIENCE -->
   <section class="bento-card bento-experience reveal" id="experience">
-    <div class="section-label">03 —</div>
+    <div class="section-label" data-i18n-nav="nav-exp">Experiencia</div>
     <h2 class="section-title" data-i18n="exp-title">Experiencia</h2>
     <div class="exp-items">
 
       <div class="exp-item">
-        <div class="exp-date" data-i18n="exp2-date">11/2025 - Presente</div>
+        <div class="exp-date" data-i18n="exp2-date">11/2025 – Presente</div>
         <div class="exp-body">
           <div class="exp-title" data-i18n="exp2-title">Profesor de Refuerzo</div>
           <div class="exp-company">Salesianos Sarrià</div>
@@ -189,12 +186,12 @@
 
   <!-- EDUCATION -->
   <section class="bento-card bento-education reveal reveal-d1" id="education">
-    <div class="section-label">04 —</div>
+    <div class="section-label" data-i18n-nav="nav-edu">Formación</div>
     <h2 class="section-title" data-i18n="edu-title">Formación</h2>
     <div class="edu-items">
 
       <div class="edu-item">
-        <div class="edu-period" data-i18n="edu-present">2025 - Presente</div>
+        <div class="edu-period" data-i18n="edu-present">2025 – Presente</div>
         <div class="edu-title" data-i18n="edu-gs">Grado Superior en Sistemas Informáticos en Red</div>
         <div class="edu-school">Salesianos Sarrià</div>
       </div>
@@ -213,116 +210,83 @@
 
   <!-- CERTIFICATES -->
   <section class="bento-card bento-certs reveal" id="certificates">
-    <div class="section-label">05 —</div>
+    <div class="section-label" data-i18n-nav="nav-certs">Certificados</div>
     <h2 class="section-title" data-i18n="cert-title">Certificados</h2>
     <div class="certs-inner">
-
-      <a href="https://www.credly.com/badges/3e9da3a5-066f-4d5e-9f65-729df75c4fe7/public_url"
-         target="_blank" rel="noopener" class="cert-link">
+      <a href="https://www.credly.com/badges/3e9da3a5-066f-4d5e-9f65-729df75c4fe7/public_url" target="_blank" rel="noopener" class="cert-link">
         <img src="img/certificados/introduction-to-cybersecurity.png" alt="" class="cert-img">
         <div>
           <div class="cert-name" data-i18n="cert1-title">Introducción a la Ciberseguridad</div>
           <div class="cert-issuer" data-i18n="cert1-desc">Cisco Networking Academy</div>
         </div>
       </a>
-
-      <a href="https://www.credly.com/badges/b58f1d37-9ad4-4418-a72c-9f8a2407638c/public_url"
-         target="_blank" rel="noopener" class="cert-link">
+      <a href="https://www.credly.com/badges/b58f1d37-9ad4-4418-a72c-9f8a2407638c/public_url" target="_blank" rel="noopener" class="cert-link">
         <img src="img/certificados/introduction-to-the-threat-landscape-3-0.png" alt="" class="cert-img">
         <div>
           <div class="cert-name" data-i18n="cert3-title">Introducción al panorama de amenazas</div>
           <div class="cert-issuer" data-i18n="cert3-desc">Cisco Networking Academy</div>
         </div>
       </a>
-
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section class="bento-card bento-projects reveal" id="projects">
-    <div class="section-label">06 —</div>
+    <div class="section-label" data-i18n-nav="nav-proj">Proyectos</div>
     <h2 class="section-title" data-i18n="proj-title">Proyectos</h2>
     <div class="projects-inner">
-
-      <a href="proyectos/FileBrowser-SalesiansSarria/FileBrowser-SalesiansSarria.html"
-         id="project-filebrowser-link" class="project-link">
+      <a href="proyectos/FileBrowser-SalesiansSarria/FileBrowser-SalesiansSarria.html" id="project-filebrowser-link" class="project-link">
         <div>
           <div class="project-name" data-i18n="proj3-title">Distribución ISO Filebrowser</div>
           <div class="project-desc" data-i18n="proj3-desc">Servidor de distribución local de ISOs usando Docker y RAID 5 para optimizar red educativa.</div>
         </div>
         <span class="project-cta" data-i18n="proj-link">Ver proyecto →</span>
       </a>
-
     </div>
   </section>
 
 </main>
 
-<!-- Back to top -->
 <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
 </button>
 
-<!-- Footer -->
 <footer>
   <span class="footer-copy">© 2025 · Mario Rodríguez · Administrador de Sistemas Junior</span>
   <div class="footer-links">
     <a href="mailto:mario2006rodriguez@gmail.com" class="footer-link" aria-label="Email">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
     </a>
     <a href="https://www.linkedin.com/in/mariorodriguezgonzalez" target="_blank" rel="noopener" class="footer-link" aria-label="LinkedIn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
     </a>
   </div>
 </footer>
 
 <script>
-/* ═══════════════════════════════════════
-   CUSTOM CURSOR
-═══════════════════════════════════════ */
-const cursor = document.getElementById('cursor');
-let mouseX = 0, mouseY = 0;
-let curX = 0, curY = 0;
+/* CURSOR */
+const cur=document.getElementById('cursor');
+let mx=0,my=0,cx=0,cy=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
+(function anim(){cx+=(mx-cx)*.16;cy+=(my-cy)*.16;cur.style.left=cx+'px';cur.style.top=cy+'px';requestAnimationFrame(anim)})();
+document.querySelectorAll('a,button,.skill-tag').forEach(el=>{
+  el.addEventListener('mouseenter',()=>cur.classList.add('hover'));
+  el.addEventListener('mouseleave',()=>cur.classList.remove('hover'));
+});
+document.addEventListener('mousedown',()=>cur.classList.add('click'));
+document.addEventListener('mouseup',()=>cur.classList.remove('click'));
 
-document.addEventListener('mousemove', e => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
+/* THEME */
+const themeBtn=document.getElementById('theme-toggle');
+document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'dark');
+themeBtn.addEventListener('click',()=>{
+  const n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);
 });
 
-(function animateCursor() {
-  curX += (mouseX - curX) * 0.18;
-  curY += (mouseY - curY) * 0.18;
-  cursor.style.left = curX + 'px';
-  cursor.style.top  = curY + 'px';
-  requestAnimationFrame(animateCursor);
-})();
-
-document.querySelectorAll('a, button, [cursor-none], .skill-item').forEach(el => {
-  el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-  el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-});
-
-document.addEventListener('mousedown', () => cursor.classList.add('click'));
-document.addEventListener('mouseup',   () => cursor.classList.remove('click'));
-
-/* ═══════════════════════════════════════
-   THEME
-═══════════════════════════════════════ */
-const themeBtn  = document.getElementById('theme-toggle');
-const savedTheme = localStorage.getItem('theme') || 'dark';
-document.documentElement.setAttribute('data-theme', savedTheme);
-
-themeBtn.addEventListener('click', () => {
-  const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-  document.documentElement.setAttribute('data-theme', next);
-  localStorage.setItem('theme', next);
-});
-
-/* ═══════════════════════════════════════
-   TRANSLATIONS
-═══════════════════════════════════════ */
-const T = {
-  es: {
+/* TRANSLATIONS */
+const T={
+  es:{
     "nav-about":"Sobre mí","nav-skills":"Habilidades","nav-exp":"Experiencia",
     "nav-edu":"Formación","nav-certs":"Certificados","nav-proj":"Proyectos",
     "hero-tag":"Disponible para Prácticas",
@@ -334,13 +298,13 @@ const T = {
     "exp-title":"Experiencia","exp2-title":"Profesor de Refuerzo",
     "exp2-l1":"Refuerzo de contenidos teóricos y prácticos de informática.",
     "exp2-l2":"Resolución de dudas y acompañamiento en el aprendizaje.",
-    "exp2-date":"11/2025 - Presente","exp1-title":"Becario Soporte Técnico",
+    "exp2-date":"11/2025 – Presente","exp1-title":"Becario Soporte Técnico",
     "exp1-l1":"Atención y resolución de incidencias de hardware y software.",
     "exp1-l2":"Soporte técnico presencial y remoto.",
     "exp1-l3":"Instalación y configuración de software y equipos.",
     "edu-title":"Formación","edu-gs":"Grado Superior en Sistemas Informáticos en Red",
     "edu-gm":"Grado Medio en Sistemas Microinformáticos y Redes",
-    "edu-present":"2025 - Presente","edu-note":"Nota Media: 9,51",
+    "edu-present":"2025 – Presente","edu-note":"Nota Media: 9,51",
     "skills-title":"Habilidades & Conocimientos","skills-cat1":"Sistemas & Redes",
     "skills-cat2":"Cloud & Empresa","skills-cat3":"Aptitudes",
     "sk-win":"Windows Server (AD, GPO, PS)","sk-linux":"GNU/Linux",
@@ -359,7 +323,7 @@ const T = {
     "proj3-desc":"Servidor de distribución local de ISOs usando Docker y RAID 5 para optimizar red educativa.",
     "proj-link":"Ver proyecto →"
   },
-  cat: {
+  cat:{
     "nav-about":"Sobre mi","nav-skills":"Habilitats","nav-exp":"Experiència",
     "nav-edu":"Formació","nav-certs":"Certificats","nav-proj":"Projectes",
     "hero-tag":"Disponible per a Pràctiques",
@@ -371,13 +335,13 @@ const T = {
     "exp-title":"Experiència","exp2-title":"Professor de Reforç",
     "exp2-l1":"Reforç de continguts teòrics i pràctics d'informàtica.",
     "exp2-l2":"Resolució de dubtes i acompanyament en l'aprenentatge.",
-    "exp2-date":"11/2025 - Actualitat","exp1-title":"Becari Suport Tècnic",
+    "exp2-date":"11/2025 – Actualitat","exp1-title":"Becari Suport Tècnic",
     "exp1-l1":"Atenció i resolució d'incidències de maquinari i programari.",
     "exp1-l2":"Suport tècnic presencial i remot.",
     "exp1-l3":"Instal·lació i configuració de programari i equips.",
     "edu-title":"Formació","edu-gs":"Grau Superior en Sistemes Informàtics en Xarxa",
     "edu-gm":"Grau Mitjà en Sistemes Microinformàtics i Xarxes",
-    "edu-present":"2025 - Actualitat","edu-note":"Nota Mitjana: 9,51",
+    "edu-present":"2025 – Actualitat","edu-note":"Nota Mitjana: 9,51",
     "skills-title":"Habilitats & Coneixements","skills-cat1":"Sistemes & Xarxes",
     "skills-cat2":"Cloud & Empresa","skills-cat3":"Aptituds",
     "sk-win":"Windows Server (AD, GPO, PS)","sk-linux":"GNU/Linux",
@@ -396,7 +360,7 @@ const T = {
     "proj3-desc":"Servidor de distribució local d'ISOs usant Docker i RAID 5 per optimitzar la xarxa.",
     "proj-link":"Veure projecte →"
   },
-  en: {
+  en:{
     "nav-about":"About","nav-skills":"Skills","nav-exp":"Experience",
     "nav-edu":"Education","nav-certs":"Certificates","nav-proj":"Projects",
     "hero-tag":"Available for Internships",
@@ -408,13 +372,13 @@ const T = {
     "exp-title":"Experience","exp2-title":"Tutoring Teacher",
     "exp2-l1":"Reinforcement of theoretical and practical IT content.",
     "exp2-l2":"Resolution of doubts and accompaniment in learning.",
-    "exp2-date":"11/2025 - Present","exp1-title":"IT Support Intern",
+    "exp2-date":"11/2025 – Present","exp1-title":"IT Support Intern",
     "exp1-l1":"Attention and resolution of hardware and software incidents.",
     "exp1-l2":"On-site and remote technical support.",
     "exp1-l3":"Installation and configuration of software and equipment.",
     "edu-title":"Education","edu-gs":"Advanced Degree in Network Systems Administration",
     "edu-gm":"Intermediate Degree in Microcomputer Systems and Networks",
-    "edu-present":"2025 - Present","edu-note":"Average Grade: 9.51",
+    "edu-present":"2025 – Present","edu-note":"Average Grade: 9.51",
     "skills-title":"Skills & Knowledge","skills-cat1":"Systems & Networks",
     "skills-cat2":"Cloud & Business","skills-cat3":"Soft Skills",
     "sk-win":"Windows Server (AD, GPO, PS)","sk-linux":"GNU/Linux",
@@ -435,97 +399,56 @@ const T = {
   }
 };
 
-/* ═══════════════════════════════════════
-   LANGUAGE
-═══════════════════════════════════════ */
-const langBtns   = document.querySelectorAll('.lang-btn');
-const navLinks   = document.querySelectorAll('[data-i18n-nav]');
+/* LANGUAGE */
+const langBtns=document.querySelectorAll('.lang-btn');
+const i18nNav=document.querySelectorAll('[data-i18n-nav]');
 
-const updateProjectLinks = lang => {
-  document.querySelectorAll('#project-filebrowser-link').forEach(el => {
-    const base = el.getAttribute('href').split('?')[0];
-    el.setAttribute('href', base + '?lang=' + lang);
+const setLang=lang=>{
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n');if(T[lang]?.[k])el.innerHTML=T[lang][k];
   });
+  i18nNav.forEach(el=>{
+    const k=el.getAttribute('data-i18n-nav');if(T[lang]?.[k])el.textContent=T[lang][k];
+  });
+  langBtns.forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
+  localStorage.setItem('lang',lang);
+  const pl=document.getElementById('project-filebrowser-link');
+  if(pl){const b=pl.getAttribute('href').split('?')[0];pl.setAttribute('href',b+'?lang='+lang)}
 };
+langBtns.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
 
-const setLang = lang => {
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const k = el.getAttribute('data-i18n');
-    if (T[lang]?.[k]) el.innerHTML = T[lang][k];
-  });
-  navLinks.forEach(el => {
-    const k = el.getAttribute('data-i18n-nav');
-    if (T[lang]?.[k]) el.textContent = T[lang][k];
-  });
-  langBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
-  localStorage.setItem('lang', lang);
-  updateProjectLinks(lang);
-};
-
-langBtns.forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
-
-/* ═══════════════════════════════════════
-   HAMBURGER
-═══════════════════════════════════════ */
-const hamburger  = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobile-menu');
-
-hamburger.addEventListener('click', () => {
-  const open = hamburger.classList.toggle('open');
-  mobileMenu.classList.toggle('open', open);
-  hamburger.setAttribute('aria-expanded', open);
-  mobileMenu.setAttribute('aria-hidden', !open);
+/* HAMBURGER */
+const hbg=document.getElementById('hamburger'),mm=document.getElementById('mobile-menu');
+hbg.addEventListener('click',()=>{
+  const o=hbg.classList.toggle('open');
+  mm.classList.toggle('open',o);hbg.setAttribute('aria-expanded',o);mm.setAttribute('aria-hidden',!o);
 });
+mm.querySelectorAll('.mobile-nav-link').forEach(l=>l.addEventListener('click',()=>{
+  hbg.classList.remove('open');mm.classList.remove('open');
+  hbg.setAttribute('aria-expanded','false');mm.setAttribute('aria-hidden','true');
+}));
 
-mobileMenu.querySelectorAll('.mobile-nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    mobileMenu.classList.remove('open');
-    hamburger.setAttribute('aria-expanded','false');
-    mobileMenu.setAttribute('aria-hidden','true');
-  });
-});
+/* ACTIVE NAV */
+const sects=document.querySelectorAll('section[id]');
+const allLinks=document.querySelectorAll('.nav-link,.mobile-nav-link');
+const secObs=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){const id=e.target.id;allLinks.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+id))}});
+},{rootMargin:'-35% 0px -60% 0px'});
+sects.forEach(s=>secObs.observe(s));
 
-/* ═══════════════════════════════════════
-   ACTIVE NAV
-═══════════════════════════════════════ */
-const sections    = document.querySelectorAll('section[id]');
-const allNavLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+/* SCROLL REVEAL */
+const revObs=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revObs.unobserve(e.target)}});
+},{threshold:.06});
+document.querySelectorAll('.reveal').forEach(el=>revObs.observe(el));
 
-const sectionObs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      const id = e.target.id;
-      allNavLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
-    }
-  });
-}, { rootMargin: '-35% 0px -60% 0px' });
+/* BACK TO TOP */
+const btt=document.getElementById('back-to-top');
+window.addEventListener('scroll',()=>btt.classList.toggle('visible',scrollY>500),{passive:true});
+btt.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 
-sections.forEach(s => sectionObs.observe(s));
-
-/* ═══════════════════════════════════════
-   SCROLL REVEAL
-═══════════════════════════════════════ */
-const revealObs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }
-  });
-}, { threshold: 0.06 });
-
-document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
-
-/* ═══════════════════════════════════════
-   BACK TO TOP
-═══════════════════════════════════════ */
-const btt = document.getElementById('back-to-top');
-window.addEventListener('scroll', () => btt.classList.toggle('visible', scrollY > 500), { passive: true });
-btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
-/* ═══════════════════════════════════════
-   INIT
-═══════════════════════════════════════ */
-const initLang = new URLSearchParams(location.search).get('lang') || localStorage.getItem('lang') || 'es';
-setLang(initLang);
+/* INIT */
+setLang(new URLSearchParams(location.search).get('lang')||localStorage.getItem('lang')||'es');
 </script>
 </body>
 </html>
