@@ -786,6 +786,37 @@ footer{
 /* skills with no badge (experience) keep right padding even */
 .hskill.exp{padding-right:.75rem}
 
+/* ── Nested accordion (competencia → tecnologías) ── */
+.haccs{display:flex;flex-direction:column;gap:.45rem}
+.hacc{
+  border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden;
+  background:var(--tag-bg);transition:border-color .18s,box-shadow .18s;
+}
+.hacc[open]{border-color:rgba(var(--accent-rgb),.25)}
+.hacc summary{
+  cursor:none;list-style:none;padding:.7rem .9rem;
+  display:flex;align-items:center;justify-content:space-between;gap:.6rem;
+  font-family:var(--f-disp);font-weight:700;font-size:.85rem;color:var(--text);
+  transition:background .15s;
+}
+.hacc summary:hover{background:rgba(var(--accent-rgb),.04)}
+.hacc summary::-webkit-details-marker{display:none}
+.hacc-left{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;min-width:0}
+.hacc-right{display:flex;align-items:center;gap:.5rem;flex-shrink:0}
+.hacc-count{font-family:var(--f-mono);font-size:.62rem;color:var(--text-3);font-weight:500}
+.hacc-arrow{color:var(--text-3);transition:transform .2s;display:flex}
+.hacc[open] .hacc-arrow{transform:rotate(90deg)}
+.hacc-body{padding:0 .9rem .85rem;display:flex;flex-wrap:wrap;gap:.4rem}
+.hchild{
+  font-family:var(--f-mono);font-size:.66rem;color:var(--text-2);
+  padding:.22rem .55rem;background:var(--card);border:1px solid var(--tag-brd);
+  border-radius:5px;transition:all .15s;
+}
+.hchild:hover{color:var(--text);border-color:rgba(var(--accent-rgb),.25)}
+
+/* experience badge (gris) for parity */
+.hbadge.exp{background:var(--tag-bg);color:var(--text-3);border:1px solid var(--tag-brd)}
+
 /* ══════════════════════════════════════════════
    ABOUT — soft skills (moved to home)
 ══════════════════════════════════════════════ */
