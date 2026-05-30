@@ -510,8 +510,8 @@ body::before {
    CERTIFICATES CARD
 ══════════════════════════════════════════════ */
 .bento-certs{grid-column:span 12;padding:1.5rem 1.75rem}
-.certs-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-top:1rem}
-@media(max-width:900px){.certs-inner{grid-template-columns:1fr 1fr}}
+.certs-inner{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-top:1rem}
+@media(max-width:640px){.certs-inner{grid-template-columns:1fr}}
 
 .cert-link{
   display:flex;align-items:center;gap:1rem;padding:.875rem 1.125rem;
