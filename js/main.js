@@ -56,6 +56,10 @@ const T = {
     "csk-best":"Buenas Prácticas",
     "org-cert":"Certificado","org-proj":"Proyecto","org-exp":"Experiencia",
     "harea-cyber":"Ciberseguridad","harea-sys":"Sistemas & Virtualización","harea-net":"Redes","harea-cloud":"Cloud & Gestión",
+    "comp-netsec":"Seguridad de Redes","comp-secops":"Operaciones de Seguridad","comp-protection":"Protección de Endpoints",
+    "comp-winserver":"Windows Server","comp-virt":"Virtualización","comp-linux":"Linux","comp-monit":"Monitorización","comp-storage":"Almacenamiento",
+    "comp-netinfra":"Infraestructura de Red","comp-netsvc":"Servicios de Red","comp-secnet":"Conectividad Segura",
+    "comp-cloud":"Cloud & IaC","comp-productivity":"Productividad","comp-mgmt":"Gestión & Soporte",
     "hsk-raid":"RAID","hsk-ubuntu":"Ubuntu Server","hsk-webmin":"Webmin","hsk-vpn":"VPN",
     "hsk-backup":"Backup y Recuperación","hsk-ps":"PowerShell Scripting","hsk-ad":"Active Directory",
     "hsk-proxmox":"Proxmox","hsk-vmware":"VMware","hsk-vbox":"VirtualBox",
@@ -121,6 +125,10 @@ const T = {
     "csk-best":"Bones Pràctiques",
     "org-cert":"Certificat","org-proj":"Projecte","org-exp":"Experiència",
     "harea-cyber":"Ciberseguretat","harea-sys":"Sistemes & Virtualització","harea-net":"Xarxes","harea-cloud":"Cloud & Gestió",
+    "comp-netsec":"Seguretat de Xarxa","comp-secops":"Operacions de Seguretat","comp-protection":"Protecció d'Endpoints",
+    "comp-winserver":"Windows Server","comp-virt":"Virtualització","comp-linux":"Linux","comp-monit":"Monitoratge","comp-storage":"Emmagatzematge",
+    "comp-netinfra":"Infraestructura de Xarxa","comp-netsvc":"Serveis de Xarxa","comp-secnet":"Connectivitat Segura",
+    "comp-cloud":"Cloud & IaC","comp-productivity":"Productivitat","comp-mgmt":"Gestió & Suport",
     "hsk-raid":"RAID","hsk-ubuntu":"Ubuntu Server","hsk-webmin":"Webmin","hsk-vpn":"VPN",
     "hsk-backup":"Backup i Recuperació","hsk-ps":"PowerShell Scripting","hsk-ad":"Active Directory",
     "hsk-proxmox":"Proxmox","hsk-vmware":"VMware","hsk-vbox":"VirtualBox",
@@ -186,6 +194,10 @@ const T = {
     "csk-best":"Best Practices",
     "org-cert":"Certified","org-proj":"Project","org-exp":"Experience",
     "harea-cyber":"Cybersecurity","harea-sys":"Systems & Virtualization","harea-net":"Networking","harea-cloud":"Cloud & Management",
+    "comp-netsec":"Network Security","comp-secops":"Security Operations","comp-protection":"Endpoint Protection",
+    "comp-winserver":"Windows Server","comp-virt":"Virtualization","comp-linux":"Linux","comp-monit":"Monitoring","comp-storage":"Storage",
+    "comp-netinfra":"Network Infrastructure","comp-netsvc":"Network Services","comp-secnet":"Secure Connectivity",
+    "comp-cloud":"Cloud & IaC","comp-productivity":"Productivity","comp-mgmt":"Management & Support",
     "hsk-raid":"RAID","hsk-ubuntu":"Ubuntu Server","hsk-webmin":"Webmin","hsk-vpn":"VPN",
     "hsk-backup":"Backup & Recovery","hsk-ps":"PowerShell Scripting","hsk-ad":"Active Directory",
     "hsk-proxmox":"Proxmox","hsk-vmware":"VMware","hsk-vbox":"VirtualBox",
@@ -252,7 +264,7 @@ langBtns.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang))
     cur.style.left = cx + 'px'; cur.style.top = cy + 'px';
     requestAnimationFrame(anim);
   })();
-  const hoverize = () => document.querySelectorAll('a,button,input,textarea,.skill-tag,.cert-link,.project-link').forEach(el => {
+  const hoverize = () => document.querySelectorAll('a,button,input,textarea,summary,.skill-tag,.cert-link,.project-link').forEach(el => {
     el.addEventListener('mouseenter', () => cur.classList.add('hover'));
     el.addEventListener('mouseleave', () => cur.classList.remove('hover'));
   });
