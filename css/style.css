@@ -592,6 +592,8 @@ body::before {
 }
 .project-link:hover .project-cta{gap:.55rem}
 
+.project-tech{margin-top:.875rem}
+
 /* ══════════════════════════════════════════════
    FOOTER
 ══════════════════════════════════════════════ */
