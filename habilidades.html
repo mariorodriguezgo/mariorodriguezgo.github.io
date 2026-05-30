@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Habilidades — Mario Rodríguez</title>
   <meta name="description" content="Habilidades y conocimientos técnicos de Mario Rodríguez González">
-  <link rel="stylesheet" href="css/style.css?v=12">
+  <link rel="stylesheet" href="css/style.css?v=13">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -65,64 +65,179 @@
     <!-- CIBERSEGURIDAD -->
     <div class="harea">
       <div class="harea-head"><span class="harea-dot"></span><span data-i18n="harea-cyber">Ciberseguridad</span></div>
-      <div class="hskills">
-        <span class="hskill"><span data-i18n="csk-netsec">Network Security</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
-        <span class="hskill"><span data-i18n="csk-firewalls">Firewalls</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
-        <span class="hskill"><span data-i18n="csk-siem">SIEM &amp; SOC</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
-        <span class="hskill"><span data-i18n="csk-endpoint">Endpoint Security</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
-        <span class="hskill"><span data-i18n="csk-crypto">Cryptography &amp; PKI</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
-        <span class="hskill"><span data-i18n="csk-access">Access Control</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
-        <span class="hskill"><span data-i18n="csk-malware">Malware</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
-        <span class="hskill"><span data-i18n="csk-social">Social Engineering</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
-        <span class="hskill exp"><span data-i18n="hsk-backup">Backup & Recovery</span></span>
+      <div class="haccs">
+        <details class="hacc">
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-netsec">Seguridad de Redes</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
+            <span class="hacc-right"><span class="hacc-count">3</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild" data-i18n="csk-firewalls">Firewalls</span>
+            <span class="hchild" data-i18n="csk-sase">SASE / SD-WAN</span>
+            <span class="hchild" data-i18n="hsk-vpn">VPN</span>
+          </div>
+        </details>
+        <details class="hacc">
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-secops">Operaciones de Seguridad</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
+            <span class="hacc-right"><span class="hacc-count">3</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild" data-i18n="csk-siem">SIEM &amp; SOC</span>
+            <span class="hchild" data-i18n="csk-malware">Malware</span>
+            <span class="hchild" data-i18n="csk-social">Social Engineering</span>
+          </div>
+        </details>
+        <details class="hacc">
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-protection">Protección de Endpoints</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
+            <span class="hacc-right"><span class="hacc-count">3</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild" data-i18n="csk-endpoint">Endpoint Security</span>
+            <span class="hchild" data-i18n="csk-access">Access Control</span>
+            <span class="hchild" data-i18n="csk-crypto">Cryptography &amp; PKI</span>
+          </div>
+        </details>
       </div>
     </div>
 
     <!-- SISTEMAS & VIRTUALIZACIÓN -->
     <div class="harea">
       <div class="harea-head"><span class="harea-dot"></span><span data-i18n="harea-sys">Sistemas & Virtualización</span></div>
-      <div class="hskills">
-        <span class="hskill exp"><span data-i18n="sk-win">Windows Server (AD, GPO, PS)</span></span>
-        <span class="hskill"><span data-i18n="sk-linux">GNU/Linux</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
-        <span class="hskill exp"><span data-i18n="sk-virt">Virtualización (Tipo 1 y 2)</span></span>
-        <span class="hskill"><span data-i18n="sk-docker">Docker & Contenedores</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
-        <span class="hskill"><span data-i18n="hsk-raid">RAID</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
-        <span class="hskill"><span data-i18n="hsk-ubuntu">Ubuntu Server</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
-        <span class="hskill"><span data-i18n="hsk-webmin">Webmin</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
-        <span class="hskill exp"><span data-i18n="hsk-ps">PowerShell Scripting</span></span>
-        <span class="hskill exp"><span data-i18n="hsk-ad">Active Directory</span></span>
-        <span class="hskill exp"><span data-i18n="hsk-proxmox">Proxmox</span></span>
-        <span class="hskill exp"><span data-i18n="hsk-vmware">VMware</span></span>
-        <span class="hskill exp"><span data-i18n="hsk-vbox">VirtualBox</span></span>
-        <span class="hskill exp"><span data-i18n="hsk-monit">Monitorización (Grafana, Zabbix, Prometheus)</span></span>
+      <div class="haccs">
+        <details class="hacc">
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-winserver">Windows Server</span><span class="hbadge exp" data-i18n="org-exp">Experiencia</span></span>
+            <span class="hacc-right"><span class="hacc-count">3</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild">Active Directory</span>
+            <span class="hchild">GPO</span>
+            <span class="hchild">PowerShell</span>
+          </div>
+        </details>
+        <details class="hacc">
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-virt">Virtualización</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
+            <span class="hacc-right"><span class="hacc-count">4</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild">Docker</span>
+            <span class="hchild">Proxmox</span>
+            <span class="hchild">VMware</span>
+            <span class="hchild">VirtualBox</span>
+          </div>
+        </details>
+        <details class="hacc">
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-linux">Linux</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
+            <span class="hacc-right"><span class="hacc-count">2</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild">Ubuntu Server</span>
+            <span class="hchild">Webmin</span>
+          </div>
+        </details>
+        <details class="hacc">
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-monit">Monitorización</span><span class="hbadge exp" data-i18n="org-exp">Experiencia</span></span>
+            <span class="hacc-right"><span class="hacc-count">3</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild">Grafana</span>
+            <span class="hchild">Zabbix</span>
+            <span class="hchild">Prometheus</span>
+          </div>
+        </details>
+        <details class="hacc">
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-storage">Almacenamiento</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
+            <span class="hacc-right"><span class="hacc-count">2</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild" data-i18n="hsk-raid">RAID</span>
+            <span class="hchild" data-i18n="hsk-backup">Backup &amp; Recovery</span>
+          </div>
+        </details>
       </div>
     </div>
 
     <!-- REDES -->
     <div class="harea">
       <div class="harea-head"><span class="harea-dot"></span><span data-i18n="harea-net">Redes</span></div>
-      <div class="hskills">
-        <span class="hskill exp"><span data-i18n="sk-vlan">VLAN & Switching</span></span>
-        <span class="hskill exp"><span data-i18n="sk-serv">Servicios de Red (DNS, DHCP)</span></span>
-        <span class="hskill"><span data-i18n="csk-sase">SASE / SD-WAN</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
-        <span class="hskill exp"><span data-i18n="hsk-vpn">VPN</span></span>
-        <span class="hskill exp"><span data-i18n="hsk-tcpip">TCP/IP</span></span>
-        <span class="hskill exp"><span data-i18n="hsk-routing">Routing & Switching</span></span>
-        <span class="hskill exp"><span data-i18n="hsk-wifi">Wi-Fi / WLAN</span></span>
+      <div class="haccs">
+        <details class="hacc">
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-netinfra">Infraestructura de Red</span><span class="hbadge exp" data-i18n="org-exp">Experiencia</span></span>
+            <span class="hacc-right"><span class="hacc-count">4</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild">TCP/IP</span>
+            <span class="hchild" data-i18n="hsk-routing">Routing &amp; Switching</span>
+            <span class="hchild">VLAN</span>
+            <span class="hchild" data-i18n="hsk-wifi">Wi-Fi / WLAN</span>
+          </div>
+        </details>
+        <details class="hacc">
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-netsvc">Servicios de Red</span><span class="hbadge exp" data-i18n="org-exp">Experiencia</span></span>
+            <span class="hacc-right"><span class="hacc-count">2</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild">DNS</span>
+            <span class="hchild">DHCP</span>
+          </div>
+        </details>
+        <details class="hacc">
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-secnet">Conectividad Segura</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
+            <span class="hacc-right"><span class="hacc-count">2</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild" data-i18n="csk-sase">SASE / SD-WAN</span>
+            <span class="hchild" data-i18n="hsk-vpn">VPN</span>
+          </div>
+        </details>
       </div>
     </div>
 
     <!-- CLOUD & GESTIÓN -->
     <div class="harea">
       <div class="harea-head"><span class="harea-dot"></span><span data-i18n="harea-cloud">Cloud & Gestión</span></div>
-      <div class="hskills">
-        <span class="hskill exp"><span data-i18n="sk-aws">Cloud: AWS (EC2, IaC)</span></span>
-        <span class="hskill exp"><span data-i18n="sk-adm">Administración de Sistemas</span></span>
-        <span class="hskill exp"><span data-i18n="sk-doc">Documentación Técnica</span></span>
-        <span class="hskill exp"><span data-i18n="sk-jira">Jira / Kanbanize</span></span>
-        <span class="hskill exp"><span data-i18n="sk-m365">Microsoft 365</span></span>
-        <span class="hskill exp"><span data-i18n="sk-google">Google Workspace</span></span>
-        <span class="hskill exp"><span data-i18n="hsk-ticket">Ticketing / Help Desk</span></span>
+      <div class="haccs">
+        <details class="hacc">
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-cloud">Cloud & IaC</span><span class="hbadge exp" data-i18n="org-exp">Experiencia</span></span>
+            <span class="hacc-right"><span class="hacc-count">2</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild">AWS (EC2)</span>
+            <span class="hchild">Infrastructure as Code</span>
+          </div>
+        </details>
+        <details class="hacc">
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-productivity">Productividad</span><span class="hbadge exp" data-i18n="org-exp">Experiencia</span></span>
+            <span class="hacc-right"><span class="hacc-count">2</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild">Microsoft 365</span>
+            <span class="hchild">Google Workspace</span>
+          </div>
+        </details>
+        <details class="hacc">
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-mgmt">Gestión & Soporte</span><span class="hbadge exp" data-i18n="org-exp">Experiencia</span></span>
+            <span class="hacc-right"><span class="hacc-count">4</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild" data-i18n="sk-adm">Administración de Sistemas</span>
+            <span class="hchild" data-i18n="hsk-ticket">Ticketing / Help Desk</span>
+            <span class="hchild">Jira / Kanbanize</span>
+            <span class="hchild" data-i18n="sk-doc">Documentación Técnica</span>
+          </div>
+        </details>
       </div>
     </div>
 
@@ -148,6 +263,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=12"></script>
+<script src="js/main.js?v=13"></script>
 </body>
 </html>
