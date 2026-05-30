@@ -348,12 +348,11 @@ let startTerminalIntro = () => {};
     },
     contact:() => { addOut('email:    mario2006rodriguez@gmail.com', 'g'); addOut('linkedin: linkedin.com/in/mariorodriguezgonzalez', 'g'); addOut('github:   github.com/mariorodriguezgo', 'g'); },
     certs:  () => {
-      addOut('cisco:', 'b'); addOut('  ✓ introduction to cybersecurity', 'g');
       addOut('fortinet:', 'b');
-      addOut('  ✓ getting started in cybersecurity 3.0 (nse1)', 'g');
+      addOut('  ✓ certified fundamentals cybersecurity (fcf)', 'g');
       addOut('  ✓ technical introduction to cybersecurity 3.0 (nse2)', 'g');
       addOut('  ✓ introduction to the threat landscape 3.0', 'g');
-      addOut('  ✓ certified fundamentals cybersecurity', 'g');
+      addOut('  ✓ getting started in cybersecurity 3.0 (nse1)', 'g');
     },
     ls:     () => addOut('about/  skills/  experience/  education/  certs/  projects/', 'b'),
     date:   () => addOut(new Date().toLocaleString('es-ES', { timeZone: 'Europe/Madrid' }), 'w'),
