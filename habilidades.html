@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Habilidades — Mario Rodríguez</title>
   <meta name="description" content="Habilidades y conocimientos técnicos de Mario Rodríguez González">
-  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/style.css?v=10">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -52,44 +52,66 @@
   <div class="page-header reveal">
     <div class="section-label" data-i18n-nav="nav-skills">Habilidades</div>
     <h1 class="page-title" data-i18n="skills-title">Habilidades & Conocimientos</h1>
-    <p class="page-sub" data-i18n="page-skills-sub">Tecnologías, herramientas y aptitudes que manejo en el día a día.</p>
+    <p class="page-sub" data-i18n="page-skills-sub">Conocimientos organizados por área. Cada habilidad indica si está respaldada por una certificación oficial o aplicada en un proyecto real.</p>
+    <div class="skills-legend">
+      <span class="legend-item"><span class="legend-dot cert"></span><span data-i18n="org-cert">Certificado</span></span>
+      <span class="legend-item"><span class="legend-dot proj"></span><span data-i18n="org-proj">Proyecto</span></span>
+      <span class="legend-item"><span class="legend-dot exp"></span><span data-i18n="org-exp">Experiencia</span></span>
+    </div>
   </div>
 
-  <div class="skills-cols reveal reveal-d1">
+  <div class="hareas reveal reveal-d1">
 
-    <div class="skill-col">
-      <div class="skill-col-head"><span class="skill-dot"></span><span data-i18n="skills-cat1">Sistemas & Redes</span></div>
-      <div class="skill-tags">
-        <span class="skill-tag" data-i18n="sk-win">Windows Server (AD, GPO, PS)</span>
-        <span class="skill-tag" data-i18n="sk-linux">GNU/Linux</span>
-        <span class="skill-tag" data-i18n="sk-virt">Virtualización (Tipo 1 y 2)</span>
-        <span class="skill-tag" data-i18n="sk-docker">Docker & Contenedores</span>
-        <span class="skill-tag" data-i18n="sk-vlan">VLAN & Switching</span>
-        <span class="skill-tag" data-i18n="sk-serv">Servicios de Red (DNS, DHCP)</span>
+    <!-- CIBERSEGURIDAD -->
+    <div class="harea">
+      <div class="harea-head"><span class="harea-dot"></span><span data-i18n="harea-cyber">Ciberseguridad</span></div>
+      <div class="hskills">
+        <span class="hskill"><span data-i18n="csk-netsec">Network Security</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
+        <span class="hskill"><span data-i18n="csk-firewalls">Firewalls</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
+        <span class="hskill"><span data-i18n="csk-siem">SIEM &amp; SOC</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
+        <span class="hskill"><span data-i18n="csk-endpoint">Endpoint Security</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
+        <span class="hskill"><span data-i18n="csk-crypto">Cryptography &amp; PKI</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
+        <span class="hskill"><span data-i18n="csk-access">Access Control</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
+        <span class="hskill"><span data-i18n="csk-malware">Malware</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
+        <span class="hskill"><span data-i18n="csk-social">Social Engineering</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
       </div>
     </div>
 
-    <div class="skill-col">
-      <div class="skill-col-head"><span class="skill-dot"></span><span data-i18n="skills-cat2">Cloud & Empresa</span></div>
-      <div class="skill-tags">
-        <span class="skill-tag" data-i18n="sk-aws">Cloud: AWS (EC2, IaC)</span>
-        <span class="skill-tag" data-i18n="sk-adm">Administración de Sistemas</span>
-        <span class="skill-tag" data-i18n="sk-doc">Documentación Técnica</span>
-        <span class="skill-tag" data-i18n="sk-jira">Jira / Kanbanize</span>
-        <span class="skill-tag" data-i18n="sk-m365">Microsoft 365</span>
-        <span class="skill-tag" data-i18n="sk-google">Google Workspace</span>
+    <!-- SISTEMAS & VIRTUALIZACIÓN -->
+    <div class="harea">
+      <div class="harea-head"><span class="harea-dot"></span><span data-i18n="harea-sys">Sistemas & Virtualización</span></div>
+      <div class="hskills">
+        <span class="hskill exp"><span data-i18n="sk-win">Windows Server (AD, GPO, PS)</span></span>
+        <span class="hskill"><span data-i18n="sk-linux">GNU/Linux</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
+        <span class="hskill exp"><span data-i18n="sk-virt">Virtualización (Tipo 1 y 2)</span></span>
+        <span class="hskill"><span data-i18n="sk-docker">Docker & Contenedores</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
+        <span class="hskill"><span data-i18n="hsk-raid">RAID 5</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
+        <span class="hskill"><span data-i18n="hsk-ubuntu">Ubuntu Server</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
+        <span class="hskill"><span data-i18n="hsk-webmin">Webmin</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
       </div>
     </div>
 
-    <div class="skill-col">
-      <div class="skill-col-head"><span class="skill-dot"></span><span data-i18n="skills-cat3">Aptitudes</span></div>
-      <div class="skill-tags">
-        <span class="skill-tag" data-i18n="sk-res">Resolución de Incidencias</span>
-        <span class="skill-tag" data-i18n="sk-team">Trabajo en Equipo</span>
-        <span class="skill-tag" data-i18n="sk-adapt">Adaptabilidad</span>
-        <span class="skill-tag" data-i18n="sk-init">Creatividad e Iniciativa</span>
-        <span class="skill-tag" data-i18n="sk-time">Gestión del Tiempo</span>
-        <span class="skill-tag" data-i18n="sk-comm">Comunicación</span>
+    <!-- REDES -->
+    <div class="harea">
+      <div class="harea-head"><span class="harea-dot"></span><span data-i18n="harea-net">Redes</span></div>
+      <div class="hskills">
+        <span class="hskill exp"><span data-i18n="sk-vlan">VLAN & Switching</span></span>
+        <span class="hskill exp"><span data-i18n="sk-serv">Servicios de Red (DNS, DHCP)</span></span>
+        <span class="hskill"><span data-i18n="csk-sase">SASE / SD-WAN</span><span class="hbadge cert" data-i18n="org-cert">Certificado</span></span>
+        <span class="hskill exp"><span data-i18n="hsk-vpn">VPN</span></span>
+      </div>
+    </div>
+
+    <!-- CLOUD & GESTIÓN -->
+    <div class="harea">
+      <div class="harea-head"><span class="harea-dot"></span><span data-i18n="harea-cloud">Cloud & Gestión</span></div>
+      <div class="hskills">
+        <span class="hskill exp"><span data-i18n="sk-aws">Cloud: AWS (EC2, IaC)</span></span>
+        <span class="hskill exp"><span data-i18n="sk-adm">Administración de Sistemas</span></span>
+        <span class="hskill exp"><span data-i18n="sk-doc">Documentación Técnica</span></span>
+        <span class="hskill exp"><span data-i18n="sk-jira">Jira / Kanbanize</span></span>
+        <span class="hskill exp"><span data-i18n="sk-m365">Microsoft 365</span></span>
+        <span class="hskill exp"><span data-i18n="sk-google">Google Workspace</span></span>
       </div>
     </div>
 
@@ -115,6 +137,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=9"></script>
+<script src="js/main.js?v=10"></script>
 </body>
 </html>
