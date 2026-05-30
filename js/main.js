@@ -45,6 +45,7 @@ const T = {
     "cert-title":"Certificados","cert1-title":"Introducción a la Ciberseguridad",
     "cert1-desc":"Cisco Networking Academy",
     "cert5-title":"Getting Started in Cybersecurity 3.0","cert5-desc":"Fortinet",
+    "cert6-title":"Technical Introduction to Cybersecurity 3.0","cert6-desc":"Fortinet · NSE 2",
     "cert3-title":"Introduction to the Threat Landscape 3.0","cert3-desc":"Fortinet",
     "cert4-title":"Fortinet Certified Fundamentals Cybersecurity","cert4-desc":"Fortinet",
     "proj-title":"Proyectos","proj3-title":"Distribución ISO Filebrowser",
@@ -96,6 +97,7 @@ const T = {
     "cert-title":"Certificats","cert1-title":"Introducció a la Ciberseguretat",
     "cert1-desc":"Cisco Networking Academy",
     "cert5-title":"Getting Started in Cybersecurity 3.0","cert5-desc":"Fortinet",
+    "cert6-title":"Technical Introduction to Cybersecurity 3.0","cert6-desc":"Fortinet · NSE 2",
     "cert3-title":"Introduction to the Threat Landscape 3.0","cert3-desc":"Fortinet",
     "cert4-title":"Fortinet Certified Fundamentals Cybersecurity","cert4-desc":"Fortinet",
     "proj-title":"Projectes","proj3-title":"Distribució ISO Filebrowser",
@@ -147,6 +149,7 @@ const T = {
     "cert-title":"Certificates","cert1-title":"Introduction to Cybersecurity",
     "cert1-desc":"Cisco Networking Academy",
     "cert5-title":"Getting Started in Cybersecurity 3.0","cert5-desc":"Fortinet",
+    "cert6-title":"Technical Introduction to Cybersecurity 3.0","cert6-desc":"Fortinet · NSE 2",
     "cert3-title":"Introduction to the Threat Landscape 3.0","cert3-desc":"Fortinet",
     "cert4-title":"Fortinet Certified Fundamentals Cybersecurity","cert4-desc":"Fortinet",
     "proj-title":"Projects","proj3-title":"Filebrowser ISO Distribution",
@@ -347,7 +350,8 @@ let startTerminalIntro = () => {};
     certs:  () => {
       addOut('cisco:', 'b'); addOut('  ✓ introduction to cybersecurity', 'g');
       addOut('fortinet:', 'b');
-      addOut('  ✓ getting started in cybersecurity 3.0', 'g');
+      addOut('  ✓ getting started in cybersecurity 3.0 (nse1)', 'g');
+      addOut('  ✓ technical introduction to cybersecurity 3.0 (nse2)', 'g');
       addOut('  ✓ introduction to the threat landscape 3.0', 'g');
       addOut('  ✓ certified fundamentals cybersecurity', 'g');
     },
