@@ -762,7 +762,8 @@ footer{
 .harea:nth-child(2) .harea-dot{background:#3EBD8F}  /* Sistemas */
 .harea:nth-child(3) .harea-dot{background:#4F9EFF}  /* Redes */
 .harea:nth-child(4) .harea-dot{background:#4F9EFF}
-.harea:nth-child(5) .harea-dot{background:#F97316}  /* Cloud */
+.harea:nth-child(5) .harea-dot{background:#F97316}
+.harea:nth-child(6) .harea-dot{background:#EC4899}  /* Cloud */
 
 .hskills{display:flex;flex-wrap:wrap;gap:.5rem}
 
