@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Habilidades — Mario Rodríguez</title>
   <meta name="description" content="Habilidades y conocimientos técnicos de Mario Rodríguez González">
-  <link rel="stylesheet" href="css/style.css?v=15">
+  <link rel="stylesheet" href="css/style.css?v=16">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -104,7 +104,7 @@
 
     <!-- SISTEMAS & VIRTUALIZACIÓN -->
     <div class="harea">
-      <div class="harea-head"><span class="harea-dot"></span><span data-i18n="harea-sys">Sistemas & Virtualización</span></div>
+      <div class="harea-head"><span class="harea-dot"></span><span data-i18n="harea-sys">Sistemas</span></div>
       <div class="haccs">
         <details class="hacc" open>
           <summary>
@@ -115,19 +115,6 @@
             <span class="hchild">Active Directory</span>
             <span class="hchild">GPO</span>
             <span class="hchild">PowerShell</span>
-          </div>
-        </details>
-        <details class="hacc" open>
-          <summary>
-            <span class="hacc-left"><span data-i18n="comp-virt">Virtualización & Contenedores</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
-            <span class="hacc-right"><span class="hacc-count">5</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-          </summary>
-          <div class="hacc-body">
-            <span class="hchild">Docker</span>
-            <span class="hchild">Proxmox</span>
-            <span class="hchild">VMware</span>
-            <span class="hchild">VirtualBox</span>
-            <span class="hchild">AWS (EC2)</span>
           </div>
         </details>
         <details class="hacc" open>
@@ -174,8 +161,52 @@
       </div>
     </div>
 
-    <!-- REDES -->
+    <!-- VIRTUALIZACIÓN -->
     <div class="harea">
+      <div class="harea-head"><span class="harea-dot"></span><span data-i18n="harea-virt">Virtualización</span></div>
+      <div class="haccs">
+        <details class="hacc" open>
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-baremetal">Hipervisor Bare-Metal</span><span class="hbadge exp" data-i18n="org-exp">Experiencia</span></span>
+            <span class="hacc-right"><span class="hacc-count">2</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild">Proxmox</span>
+            <span class="hchild">VMware ESXi</span>
+          </div>
+        </details>
+        <details class="hacc" open>
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-hosted">Hipervisor Hosted</span><span class="hbadge exp" data-i18n="org-exp">Experiencia</span></span>
+            <span class="hacc-right"><span class="hacc-count">2</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild">VirtualBox</span>
+            <span class="hchild">VMware Workstation</span>
+          </div>
+        </details>
+        <details class="hacc" open>
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-containers">Contenedores</span><span class="hbadge proj" data-i18n="org-proj">Proyecto</span></span>
+            <span class="hacc-right"><span class="hacc-count">1</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild">Docker</span>
+          </div>
+        </details>
+        <details class="hacc" open>
+          <summary>
+            <span class="hacc-left"><span data-i18n="comp-iaas">IaaS / Cloud</span><span class="hbadge exp" data-i18n="org-exp">Experiencia</span></span>
+            <span class="hacc-right"><span class="hacc-count">1</span><svg class="hacc-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </summary>
+          <div class="hacc-body">
+            <span class="hchild">AWS (EC2)</span>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- REDES -->    <div class="harea">
       <div class="harea-head"><span class="harea-dot"></span><span data-i18n="harea-net">Redes</span></div>
       <div class="haccs">
         <details class="hacc" open>
@@ -262,6 +293,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=15"></script>
+<script src="js/main.js?v=16"></script>
 </body>
 </html>
