@@ -656,42 +656,6 @@ footer{
 [data-theme="light"] .bento-terminal { border-color: rgba(0,0,0,.14); }
 
 /* ══════════════════════════════════════════════
-   CERTIFICATES — company grouping
-   3 cols: Cisco cert ocupa las 3, Fortinet 1 c/u
-══════════════════════════════════════════════ */
-.certs-inner {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: .75rem;
-  margin-top: 1rem;
-}
-
-.cert-company-hd {
-  grid-column: 1 / -1;
-  font-family: var(--f-mono);
-  font-size: .58rem;
-  font-weight: 600;
-  color: var(--text-3);
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  padding: .375rem 0 .2rem;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: .45rem;
-  margin-top: .25rem;
-}
-.cert-company-hd:first-child { margin-top: 0; }
-.cert-company-hd::before {
-  content: '//';
-  color: var(--accent);
-  font-size: .54rem;
-  letter-spacing: .02em;
-}
-
-.cert-link.cert-solo { grid-column: 1 / -1; }
-
-/* ══════════════════════════════════════════════
    SUBPAGES (skills / certs / projects)
 ══════════════════════════════════════════════ */
 .subpage {
