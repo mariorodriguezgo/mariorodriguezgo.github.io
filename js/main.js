@@ -15,11 +15,11 @@ const T = {
     "about-title":"Sobre mí",
     "about-desc":"Hola, soy Mario, estudiante de ASIR en Salesians Sarrià con ganas de abrirme camino en el mundo IT. Soy una persona proactiva y con mucha motivación por aprender. Me apasiona el ámbito de los sistemas, las redes y la ciberseguridad, y disfruto enfrentándome a problemas técnicos reales. Busco oportunidades donde pueda seguir desarrollándome junto a profesionales con experiencia, aportar desde el primer día y crecer dentro del sector tecnológico.",
     "exp-title":"Experiencia",
-    "exp3-title":"Becario Soporte Técnico IT","exp3-date":"06/2026 – Presente",
+    "exp3-title":"Becario Soporte Técnico IT","exp3-date":"06/2026 - Presente",
     "exp2-title":"Profesor de Refuerzo",
     "exp2-l1":"Apoyo académico a alumnos de SMR en contenidos teóricos y prácticos.",
     "exp2-l2":"Resolución de dudas, preparación de exámenes y atención personalizada.",
-    "exp2-date":"12/2025 – 05/2026",
+    "exp2-date":"12/2025 - 05/2026",
     "exp1-title":"Soporte de sistemas de tecnología de la información",
     "exp1-l1":"Atención y resolución de incidencias de hardware y software.",
     "exp1-l2":"Asistencia personalizada a usuarios y coordinación con técnicos.",
@@ -85,11 +85,11 @@ const T = {
     "about-title":"Sobre mi",
     "about-desc":"Hola, soc en Mario, estudiant d'ASIR a Salesians Sarrià amb ganes d'obrir-me camí en el món IT. Soc una persona proactiva i amb molta motivació per aprendre. M'apassiona l'àmbit dels sistemes, les xarxes i la ciberseguretat, i gaudeixo enfrontant-me a problemes tècnics reals. Busco oportunitats on pugui seguir desenvolupant-me al costat de professionals amb experiència, aportar des del primer dia i créixer dins el sector tecnològic.",
     "exp-title":"Experiència",
-    "exp3-title":"Becari Suport Tècnic IT","exp3-date":"06/2026 – Actualitat",
+    "exp3-title":"Becari Suport Tècnic IT","exp3-date":"06/2026 - Actualitat",
     "exp2-title":"Professor de Reforç",
     "exp2-l1":"Suport acadèmic a alumnes de SMR en continguts teòrics i pràctics.",
     "exp2-l2":"Resolució de dubtes, preparació d'exàmens i atenció personalitzada.",
-    "exp2-date":"12/2025 – 05/2026",
+    "exp2-date":"12/2025 - 05/2026",
     "exp1-title":"Suport de sistemes de tecnologia de la informació",
     "exp1-l1":"Atenció i resolució d'incidències de maquinari i programari.",
     "exp1-l2":"Assistència personalitzada a usuaris i coordinació amb tècnics.",
@@ -155,11 +155,11 @@ const T = {
     "about-title":"About Me",
     "about-desc":"Hi, I'm Mario, an ASIR student at Salesians Sarrià keen to make my way in the IT world. I'm a proactive person with a strong drive to keep learning. I'm passionate about systems, networks and cybersecurity, and I enjoy tackling real technical problems. I'm looking for opportunities to keep growing alongside experienced professionals, contribute from day one, and build my career in the technology sector.",
     "exp-title":"Experience",
-    "exp3-title":"IT Support Intern","exp3-date":"06/2026 – Present",
+    "exp3-title":"IT Support Intern","exp3-date":"06/2026 - Present",
     "exp2-title":"Tutoring Teacher",
     "exp2-l1":"Academic support to SMR students covering theoretical and practical content.",
     "exp2-l2":"Doubt resolution, exam preparation and personalised attention.",
-    "exp2-date":"12/2025 – 05/2026",
+    "exp2-date":"12/2025 - 05/2026",
     "exp1-title":"Information Technology Systems Support",
     "exp1-l1":"Attention and resolution of hardware and software incidents.",
     "exp1-l2":"Personalised user assistance and coordination with technicians.",
@@ -302,7 +302,7 @@ langBtns.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang))
   let here = location.pathname.split('/').pop();
   if (!here || here === '') here = 'index.html';
   document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(l => {
-    const target = l.getAttribute('href').split('?')[0].split('#')[0];
+    const target = l.getAttribute('href').split('?')[0].split('#')[0].split('/').pop();
     if (target === here) l.classList.add('active');
   });
 })();
@@ -364,7 +364,7 @@ setLang(initLang);
 })();
 
 /* ══════════════════════════════════════════════
-   TERMINAL (index only — guarded)
+   TERMINAL (index only - guarded)
 ══════════════════════════════════════════════ */
 let startTerminalIntro = () => {};
 (function terminal() {
