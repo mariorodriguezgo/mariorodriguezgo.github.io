@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ISO Filebrowser — Proyecto</title>
+  <title>ISO Filebrowser - Proyecto</title>
   <meta name="description" content="Sistema Local de Distribución de ISOs con Filebrowser">
-  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=25">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 <!-- Navbar -->
 <nav class="navbar">
   <div class="nav-inner">
-    <a href="../../index.html" class="nav-logo">Mario Rodríguez</a>
+    <a href="/index.html" class="nav-logo">Mario Rodríguez</a>
     <div class="nav-right">
       <div class="lang-selector" role="group" aria-label="Idioma">
         <button class="lang-btn active" data-lang="es">ES</button>
@@ -34,7 +34,7 @@
 
 <div class="proj-page">
 
-  <a href="../../index.html" class="back-btn" id="back-btn">
+  <a href="/pages/proyectos.html" class="back-btn" id="back-btn">
     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
     <span data-i18n="back-btn">Volver al Portfolio</span>
   </a>
@@ -43,7 +43,7 @@
     <div class="proj-header">
       <div class="section-label">Proyecto</div>
       <h1 class="proj-title" data-i18n="proj-main-title">Sistema Local de Distribución de ISOs con Filebrowser</h1>
-      <p class="proj-subtitle" data-i18n="proj-subtitle">Proyecto individual — Salesians Sarrià</p>
+      <p class="proj-subtitle" data-i18n="proj-subtitle">Proyecto individual - Salesians Sarrià</p>
     </div>
 
     <div class="tech-tags">
@@ -68,19 +68,19 @@
     <h2 class="proj-section-title" data-i18n="access-title">Acceso al sistema</h2>
 
     <div class="proj-img-block">
-      <img src="img/login.png" alt="Login personalizado">
+      <img src="/proyectos/FileBrowser-SalesiansSarria/img/login.png" alt="Login personalizado">
       <p class="proj-img-caption" data-i18n="access-login">Interfaz de autenticación adaptada con branding institucional.</p>
     </div>
 
     <h3 class="proj-section-subtitle" data-i18n="access-student-title">Usuario alumno</h3>
     <div class="proj-img-block">
-      <img src="img/permisos-alumno.png" alt="Usuario alumno">
+      <img src="/proyectos/FileBrowser-SalesiansSarria/img/permisos-alumno.png" alt="Usuario alumno">
       <p class="proj-img-caption" data-i18n="access-student">Acceso restringido a la descarga de archivos, evitando modificaciones en el repositorio.</p>
     </div>
 
     <h3 class="proj-section-subtitle" data-i18n="access-teacher-title">Usuario profesor</h3>
     <div class="proj-img-block">
-      <img src="img/permisos-profesor.png" alt="Usuario profesor">
+      <img src="/proyectos/FileBrowser-SalesiansSarria/img/permisos-profesor.png" alt="Usuario profesor">
       <p class="proj-img-caption" data-i18n="access-teacher">Permisos completos para la gestión de archivos: subida, edición, eliminación y organización.</p>
     </div>
 
@@ -137,7 +137,7 @@ const T = {
   es:{
     "back-btn":"Volver al Portfolio",
     "proj-main-title":"Sistema Local de Distribución de ISOs con Filebrowser",
-    "proj-subtitle":"Proyecto individual — Salesians Sarrià",
+    "proj-subtitle":"Proyecto individual - Salesians Sarrià",
     "prob-title":"Problemática",
     "prob-desc":"En el entorno de prácticas de sistemas, la descarga simultánea de imágenes ISO (como Ubuntu 24.04) por parte de múltiples alumnos provocaba la saturación de la red WAN del centro. Esto derivaba en descargas lentas, pérdida de tiempo en clase y una dependencia constante de la conexión a internet para recursos de uso frecuente.",
     "impl-title":"Implementación",
@@ -154,7 +154,7 @@ const T = {
   cat:{
     "back-btn":"Tornar al Portfolio",
     "proj-main-title":"Sistema Local de Distribució d'ISOs amb Filebrowser",
-    "proj-subtitle":"Projecte individual — Salesians Sarrià",
+    "proj-subtitle":"Projecte individual - Salesians Sarrià",
     "prob-title":"Problemàtica",
     "prob-desc":"A l'entorn de pràctiques de sistemes, la descàrrega simultània d'imatges ISO (com Ubuntu 24.04) per part de múltiples alumnes provocava la saturació de la xarxa WAN del centre. Això derivava en descàrregues lentes, pèrdua de temps a classe i una dependència constant de la connexió a internet per a recursos d'ús freqüent.",
     "impl-title":"Implementació",
@@ -171,7 +171,7 @@ const T = {
   en:{
     "back-btn":"Back to Portfolio",
     "proj-main-title":"Local ISO Distribution System with Filebrowser",
-    "proj-subtitle":"Individual project — Salesians Sarrià",
+    "proj-subtitle":"Individual project - Salesians Sarrià",
     "prob-title":"Problem",
     "prob-desc":"In the systems practice environment, the simultaneous download of ISO images (such as Ubuntu 24.04) by multiple students caused the saturation of the center's WAN network. This resulted in slow downloads, loss of class time, and a constant dependence on the internet connection for frequently used resources.",
     "impl-title":"Implementation",
@@ -193,7 +193,7 @@ const setLang = lang => {
     const k=el.getAttribute('data-i18n');
     if(T[lang]?.[k]) el.innerHTML=T[lang][k];
   });
-  if(T[lang]?.['proj-main-title']) document.title = T[lang]['proj-main-title'] + ' — Mario Rodríguez';
+  if(T[lang]?.['proj-main-title']) document.title = T[lang]['proj-main-title'] + ' - Mario Rodríguez';
   langBtns.forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
   localStorage.setItem('lang',lang);
   const bb=document.getElementById('back-btn');
