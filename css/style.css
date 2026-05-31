@@ -667,6 +667,7 @@ footer{
   position: relative;
   z-index: 1;
 }
+.subpage-wide { max-width: 1400px; }
 
 .page-header {
   margin-bottom: 2rem;
